@@ -108,7 +108,7 @@ export default function About() {
             <img
               src={partnersImg}
               alt="Tərəfdaşlarımız"
-              className="w-full rounded-2xl dark:brightness-110 dark:contrast-110"
+              className="w-full rounded-2xl"
             />
           </div>
         </div>
