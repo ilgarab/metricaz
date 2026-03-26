@@ -2,7 +2,7 @@ export const services = [
   {
     id: "metric-bi",
     icon: "LayoutDashboard",
-    title: "Metric BI",
+    title: "Metric Bİ",
     shortDesc: "Biznes göstəricilərini vahid platformada izləmək üçün dinamik analitik hesabat və dashboard sistemi.",
   },
   {
@@ -14,7 +14,7 @@ export const services = [
   {
     id: "metric-ai",
     icon: "BrainCircuit",
-    title: "Metric AI",
+    title: "Metric Aİ",
     shortDesc: "Süni intellektlə işləyən analitik sorğu və cavab köməkçisi.",
   },
   {
@@ -58,17 +58,17 @@ Araşdırmalar göstərir ki, data əsaslı qərar qəbuletmə prosesi tətbiq e
   },
   {
     id: "bi-dashboard",
-    title: "BI Dashboard: Biznesinizin güzgüsü",
-    excerpt: "Effektiv BI dashboard-un biznes idarəetməsindəki rolu.",
-    category: "BI",
+    title: "Bİ Dashboard: Biznesinizin güzgüsü",
+    excerpt: "Effektiv Bİ dashboard-un biznes idarəetməsindəki rolu.",
+    category: "Bİ",
     date: "2025-04-08",
     readTime: "5 dəq",
     author: "Metric Komandası",
     image: "https://res.cloudinary.com/dntcs7qi6/image/upload/f_auto,q_auto/r6pqu2bjkmjpifprsfae",
     featured: false,
-    content: `BI Dashboard — biznesinizin bütün əsas göstəricilərini bir ekranda görməyə imkan verən güclü alətdir. Düzgün qurulmuş dashboard rəhbərə saniyələr içində şirkətin vəziyyətini qiymətləndirməyə imkan verir.
+    content: `Bİ Dashboard — biznesinizin bütün əsas göstəricilərini bir ekranda görməyə imkan verən güclü alətdir. Düzgün qurulmuş dashboard rəhbərə saniyələr içində şirkətin vəziyyətini qiymətləndirməyə imkan verir.
 
-Metric Analytics olaraq biz Power BI, Tableau və digər BI alətləri ilə fərdi dashboard həlləri hazırlayırıq.`,
+Metric Analytics olaraq biz Power Bİ, Tableau və digər Bİ alətləri ilə fərdi dashboard həlləri hazırlayırıq.`,
   },
 ];
 

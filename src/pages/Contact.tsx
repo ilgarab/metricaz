@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import SectionHeader from "@/components/SectionHeader";
 
 const serviceOptions = [
-  "Metric BI",
+  "Metric Bİ",
   "Metric Alert",
-  "Metric AI",
+  "Metric Aİ",
   "Metric Fraud",
   "Digər",
 ];
@@ -64,7 +64,7 @@ export default function Contact() {
               {/* Google Maps */}
               <div className="overflow-hidden rounded-xl border border-border">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4!2d49.8519!3d40.3791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d077c61fef3%3A0x41ef68bca2ec5c70!2sAjami%20Nakhchivani%2C%20Baku!5e0!3m2!1sen!2saz!4v1700000000000!5m2!1sen!2saz"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4!2d49.867092!3d40.409264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da0e2a9a57b%3A0x9c2b4e8f1d3a5c7e!2sAcami%20Naxçıvani!5e0!3m2!1saz!2saz!4v1700000000000!5m2!1saz!2saz"
                   width="100%"
                   height="200"
                   style={{ border: 0 }}
