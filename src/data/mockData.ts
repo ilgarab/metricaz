@@ -36,7 +36,7 @@ export const blogPosts = [
     author: "Metric Komandası",
     image: "https://res.cloudinary.com/dntcs7qi6/image/upload/v1745418166/sh2h26xqbqxilvosthkd.png",
     featured: true,
-    content: `Sovet dövrünə aid "Həyatın ironiyası" və ya "Həmişə təmizlikdə" adlı məşhur filmdəki replikaları xatırlayaq: "Doğrudanmı, bu qədər oxşar evlər tikirsiniz?" — "Bəli, amma hər birində fərqli insanlar yaşayır." Bu yanaşma bizim dövrümüzün marketinqinə də aid edilə bilər.
+    content: `Sovet dövrünə aid "Həyatın ironiyası" və ya "Həmişə təmizlikdə" adlı məşhur filmdəki replikaları xatırlayaq: "Doğrudanmı, bu qədər oxşar evlər tikirsiniz?" - "Bəli, amma hər birində fərqli insanlar yaşayır." Bu yanaşma bizim dövrümüzün marketinqinə də aid edilə bilər.
 
 Müasir dövrdə artıq hər müştəriyə eyni mesajla müraciət etmək effektiv deyil. Datalar əsasında müştəriləri seqmentlərə ayırıb hər birinə fərdi yanaşma tətbiq etmək lazımdır.
 
@@ -66,7 +66,7 @@ Araşdırmalar göstərir ki, data əsaslı qərar qəbuletmə prosesi tətbiq e
     author: "Metric Komandası",
     image: "https://res.cloudinary.com/dntcs7qi6/image/upload/f_auto,q_auto/r6pqu2bjkmjpifprsfae",
     featured: false,
-    content: `Bİ Dashboard — biznesinizin bütün əsas göstəricilərini bir ekranda görməyə imkan verən güclü alətdir. Düzgün qurulmuş dashboard rəhbərə saniyələr içində şirkətin vəziyyətini qiymətləndirməyə imkan verir.
+    content: `Bİ Dashboard - biznesinizin bütün əsas göstəricilərini bir ekranda görməyə imkan verən güclü alətdir. Düzgün qurulmuş dashboard rəhbərə saniyələr içində şirkətin vəziyyətini qiymətləndirməyə imkan verir.
 
 Metric Analytics olaraq biz Power Bİ, Tableau və digər Bİ alətləri ilə fərdi dashboard həlləri hazırlayırıq.`,
   },
@@ -112,7 +112,7 @@ export const companyInfo = {
   name: "Metric Analytics",
   founded: "2021",
   description: "2021-ci ildə təsis edilmiş Metric Analytics, müasir biznes dünyasında analitika və strateji həllər sahəsində xidmətlər təqdim edən bir şirkətdir. Müxtəlif sektorlar üzrə analitik hesabatlılıq sistemi, data əsaslı ağıllı bildiriş sistemi, süni intellekt əsaslı həllər, biznes analitika konsultasiyaları və data əsaslı şübhəli məqamların aşkarlanması həlləri təqdim edirik.",
-  philosophy: "Biz inanırıq ki, analitika yalnız məlumat toplamaqla kifayətlənmir – bu, şirkətlərin hədəflərinə çatmalarına və daha effektiv fəaliyyət göstərmələrinə kömək edən güclü bir alətdir. Akademik biliklərimizi və praktiki təcrübəmizi birləşdirərək, müştərilərimizin ehtiyaclarına ən uyğun və ən innovativ həlləri təqdim edirik.",
+  philosophy: "Biz inanırıq ki, analitika yalnız məlumat toplamaqla kifayətlənmir - bu, şirkətlərin hədəflərinə çatmalarına və daha effektiv fəaliyyət göstərmələrinə kömək edən güclü bir alətdir. Akademik biliklərimizi və praktiki təcrübəmizi birləşdirərək, müştərilərimizin ehtiyaclarına ən uyğun və ən innovativ həlləri təqdim edirik.",
   approach: "Metric Analytics olaraq, hər müştəriyə fərdi yanaşma və dərin təhlil təqdim edirik, şirkətlərin böyüməsini və fəaliyyətlərinin optimallaşdırılmasını təmin edirik.",
   aboutImage: "https://res.cloudinary.com/dntcs7qi6/image/upload/v1746083498/hpuef5hosh5o7whnrxcb.png",
 };

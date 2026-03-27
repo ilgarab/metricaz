@@ -11,7 +11,7 @@ export default function Services() {
           <SectionHeader
             badge="Xidmətlər"
             title="Xidmətlərimiz"
-            subtitle="Datanı sadəcə göstərmirik — onu qərar, nəzarət və nəticəyə çevirən həllər təqdim edirik."
+            subtitle="Datanı sadəcə göstərmirik - onu qərar, nəzarət və nəticəyə çevirən həllər təqdim edirik."
           />
         </div>
       </section>

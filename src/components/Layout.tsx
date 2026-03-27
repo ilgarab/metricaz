@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FloatingDataIcons from "@/components/FloatingDataIcons";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { pathname } = useLocation();
@@ -19,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className="relative z-[3] flex-1">{children}</main>
       <Footer />
       <WhatsAppButton />
+      <ScrollToTop />
     </div>
   );
 }
