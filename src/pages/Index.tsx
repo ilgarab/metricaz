@@ -139,7 +139,7 @@ export default function Index() {
         <div className="container">
           <SectionHeader
             badge="Rəylər"
-            title="Müştərilərimiz nə deyir?"
+            title="Müştəri rəyləri"
           />
           <TestimonialSlider />
         </div>
