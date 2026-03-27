@@ -124,11 +124,11 @@ export default function Index() {
             badge="Tərəfdaşlar"
             title="Tərəfdaşlar"
           />
-          <div className="mx-auto max-w-4xl rounded-2xl bg-white p-6 dark:bg-white/10">
+          <div className="mx-auto max-w-4xl">
             <img
               src={partnersImg}
               alt="Tərəfdaşlarımız"
-              className="w-full dark:brightness-110"
+              className="w-full rounded-2xl"
             />
           </div>
         </div>
