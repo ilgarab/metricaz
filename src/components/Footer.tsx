@@ -37,9 +37,9 @@ export default function Footer() {
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Xidmətlər</h4>
             <ul className="space-y-2.5 text-sm">
               {[
-                "Metric Bİ",
+                "Metric BI",
                 "Metric Alert",
-                "Metric Aİ",
+                "Metric AI",
                 "Metric Fraud",
               ].map((s) => (
                 <li key={s} className="text-muted-foreground">{s}</li>

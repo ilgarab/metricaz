@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import SectionHeader from "@/components/SectionHeader";
 
 const serviceOptions = [
-  "Metric Bİ",
+  "Metric BI",
   "Metric Alert",
-  "Metric Aİ",
+  "Metric AI",
   "Metric Fraud",
   "Digər",
 ];
