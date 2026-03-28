@@ -5,6 +5,13 @@ import CTABanner from "@/components/CTABanner";
 import { teamMembers, companyInfo } from "@/data/mockData";
 import partnersImg from "@/assets/partners.png";
 import sectionsImg from "@/assets/4-sections.png";
+import rovshanImg from "@/assets/rovshan.jpg";
+import vusalImg from "@/assets/vusal.jpg";
+
+const teamImages: Record<string, string> = {
+  rovshan: rovshanImg,
+  vusal: vusalImg,
+};
 
 const features = [
   { icon: Crosshair, title: "Biznesə uyğun həllər", desc: "Hər sektorun spesifik ehtiyacına uyğunlaşdırılmış analitik sistemlər" },
@@ -74,9 +81,15 @@ export default function About() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map((m, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="glow-card p-6 text-center">
-                <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/10 text-xl font-bold text-primary">
-                  {m.initials}
-                </div>
+                {m.image && teamImages[m.image] ? (
+                  <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full border-2 border-primary/20">
+                    <img src={teamImages[m.image]} alt={m.name} className="h-full w-full object-cover object-top" />
+                  </div>
+                ) : (
+                  <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/10 text-xl font-bold text-primary">
+                    {m.initials}
+                  </div>
+                )}
                 <h3 className="font-semibold">{m.name}</h3>
                 <p className="text-sm text-muted-foreground">{m.role}</p>
               </motion.div>
