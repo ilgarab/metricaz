@@ -4,6 +4,7 @@ import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
 import { teamMembers, companyInfo } from "@/data/mockData";
 import partnersImg from "@/assets/partners.png";
+import sectionsImg from "@/assets/4-sections.png";
 
 const features = [
   { icon: Crosshair, title: "Biznesə uyğun həllər", desc: "Hər sektorun spesifik ehtiyacına uyğunlaşdırılmış analitik sistemlər" },
