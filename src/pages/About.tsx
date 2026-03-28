@@ -85,6 +85,23 @@ export default function About() {
         </div>
       </section>
 
+      {/* Products Overview */}
+      <section className="section-padding-sm">
+        <div className="container">
+          <SectionHeader title="Məhsullarımız" subtitle="Analitik ekosistemimizin əsas komponentləri" />
+          <div className="mx-auto max-w-5xl">
+            <motion.img
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              src={sectionsImg}
+              alt="Metric məhsulları - BI, Alert, AI, Fraud"
+              className="w-full rounded-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Why us */}
       <section className="section-padding bg-card/30">
         <div className="container">
