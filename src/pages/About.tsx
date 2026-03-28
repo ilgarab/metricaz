@@ -7,10 +7,13 @@ import partnersImg from "@/assets/partners.png";
 import sectionsImg from "@/assets/4-sections.png";
 import rovshanImg from "@/assets/rovshan.jpg";
 import vusalImg from "@/assets/vusal.jpg";
+import sonaImg from "@/assets/sona.jpg";
+import aboutHeroImg from "@/assets/about-hero.png";
 
 const teamImages: Record<string, string> = {
   rovshan: rovshanImg,
   vusal: vusalImg,
+  sona: sonaImg,
 };
 
 const features = [
@@ -35,7 +38,7 @@ export default function About() {
           <div className="grid items-center gap-12 md:grid-cols-2">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <img
-                src={companyInfo.aboutImage}
+                src={aboutHeroImg}
                 alt="Metric Analytics komandası"
                 className="w-full rounded-2xl border border-border shadow-lg"
               />
