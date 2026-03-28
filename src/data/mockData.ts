@@ -97,8 +97,8 @@ export const testimonials = [
 ];
 
 export const teamMembers = [
-  { name: "Rövşən Nadirov", role: "Founder & CEO", initials: "RN" },
-  { name: "Vüsal Əhmədov", role: "Head of Operations", initials: "VƏ" },
+  { name: "Rövşən Nadirov", role: "Founder & CEO", initials: "RN", image: "rovshan" },
+  { name: "Vüsal Əhmədov", role: "Head of Operations", initials: "VƏ", image: "vusal" },
   { name: "Elsevər Musayev", role: "Head of Projects", initials: "EM" },
   { name: "Sona Muradova", role: "Team Leader", initials: "SM" },
   { name: "Pərvin Həsənova", role: "Data Analyst", initials: "PH" },
