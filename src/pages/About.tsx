@@ -65,7 +65,7 @@ export default function About() {
           <div className="grid gap-6 md:grid-cols-2">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glow-card p-8">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent"><Eye size={24} /></div>
-              <h3 className="mb-3 text-xl font-bold">Visionumuz</h3>
+              <h3 className="mb-3 text-xl font-bold"><h3 className="mb-3 text-xl font-bold">Vizyonumuz</h3></h3>
               <p className="text-muted-foreground" style={{ lineHeight: "1.7" }}>Metric-i dünyanın müxtəlif ölkələrindəki bizneslərin asanlıqla inteqrasiya olaraq, strateji və operativ qərarlarını bizim analitik ekosistemimiz üzərindən verdiyi çevik və universal bir analitika platformasına çevirmək.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="glow-card p-8">
