@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "services": "Xidmətlər",
+    "blog": "Bloq",
+    "about": "Haqqımızda",
+    "contact": "Əlaqə",
+    "cta": "Müraciət et"
+  },
+  "hero": {
+    "badge": "Data Analitika Agentliyi",
+    "title1": "Biznesinizi",
+    "titleHighlight": "data əsaslı",
+    "title2": "idarə edin",
+    "subtitle": "Analitik həllərimizdən faydalanaraq biznesinizi inkişaf etdirin",
+    "servicesBtn": "Xidmətlərimiz",
+    "contactBtn": "Bizimlə əlaqə"
+  },
+  "stats": {
+    "projects": "Tamamlanmış layihə",
+    "clients": "Müştəri",
+    "experience": "İl təcrübə"
+  },
+  "services": {
+    "badge": "Xidmətlər",
+    "title": "Data əsaslı həllər",
+    "subtitle": "Biznesinizin ehtiyaclarına uyğun analitik xidmətlər təqdim edirik",
+    "allServices": "Bütün xidmətlər",
+    "pageTitle": "Xidmətlərimiz",
+    "pageSubtitle": "Datanı sadəcə göstərmirik - onu qərar, nəzarət və nəticəyə çevirən həllər təqdim edirik.",
+    "metricBi": "Biznes göstəricilərini vahid platformada izləmək üçün dinamik analitik hesabat və dashboard sistemi.",
+    "metricAlert": "Əsas risk və fürsətləri vaxtında göstərən ağıllı bildiriş sistemi.",
+    "metricAi": "Süni intellektlə işləyən analitik sorğu və cavab köməkçisi.",
+    "metricFraud": "Şübhəli əməliyyat və uyğunsuzluqları aşkarlayan nəzarət sistemi."
+  },
+  "partners": {
+    "badge": "Tərəfdaşlar",
+    "title": "Tərəfdaşlar",
+    "alt": "Tərəfdaşlarımız"
+  },
+  "testimonials": {
+    "badge": "Rəylər",
+    "title": "Müştəri rəyləri"
+  },
+  "blog": {
+    "badge": "Bloq",
+    "title": "Son məqalələr",
+    "subtitle": "Data analitikası sahəsindəki ən son trendlər və tövsiyələr",
+    "allPosts": "Bütün məqalələr",
+    "pageTitle": "Bloq",
+    "pageSubtitle": "Data analitikası sahəsindəki ən son trendlər, tövsiyələr və bizim təcrübəmiz",
+    "read": "Oxu",
+    "notFound": "Məqalə tapılmadı",
+    "backToBlog": "Bloqa qayıt",
+    "relatedPosts": "Əlaqəli məqalələr",
+    "posts": {
+      "musteri-ozel-yanasma": {
+        "title": "Datalar əsasında müştərilərə özəl yanaşma",
+        "excerpt": "Müştəriyə individual yanaşma və data əsaslı marketinqin əhəmiyyəti.",
+        "category": "Marketinq",
+        "readTime": "8 dəq",
+        "content": "Sovet dövrünə aid \"Həyatın ironiyası\" və ya \"Həmişə təmizlikdə\" adlı məşhur filmdəki replikaları xatırlayaq: \"Doğrudanmı, bu qədər oxşar evlər tikirsiniz?\" - \"Bəli, amma hər birində fərqli insanlar yaşayır.\" Bu yanaşma bizim dövrümüzün marketinqinə də aid edilə bilər.\n\nMüasir dövrdə artıq hər müştəriyə eyni mesajla müraciət etmək effektiv deyil. Datalar əsasında müştəriləri seqmentlərə ayırıb hər birinə fərdi yanaşma tətbiq etmək lazımdır.\n\nMüştəri davranış datalarını analiz edərək hansı məhsulların kimə təklif olunacağını, hansı kampaniyaların effektiv olduğunu və hansı müştərilərin itirilmə riskində olduğunu müəyyən edə bilərik."
+      },
+      "data-esasli-qerar": {
+        "title": "Data əsaslı qərar qəbulu: Niyə vacibdir?",
+        "excerpt": "Müasir biznesdə data əsaslı qərar qəbulunun əhəmiyyəti və tətbiqi.",
+        "category": "Analitika",
+        "readTime": "6 dəq",
+        "content": "Data əsaslı qərar qəbulu müasir biznesin əsas sütunlarından biridir. Şirkətlər hər gün yüzlərlə qərar verir və bu qərarların keyfiyyəti birbaşa şirkətin gəlirliliyinə təsir edir.\n\nAraşdırmalar göstərir ki, data əsaslı qərar qəbuletmə prosesi tətbiq edən şirkətlər rəqiblərinə nisbətən 5-6% daha yüksək məhsuldarlıq göstərir."
+      },
+      "bi-dashboard": {
+        "title": "BI Dashboard: Biznesinizin güzgüsü",
+        "excerpt": "Effektiv BI dashboard-un biznes idarəetməsindəki rolu.",
+        "category": "BI",
+        "readTime": "5 dəq",
+        "content": "BI Dashboard - biznesinizin bütün əsas göstəricilərini bir ekranda görməyə imkan verən güclü alətdir. Düzgün qurulmuş dashboard rəhbərə saniyələr içində şirkətin vəziyyətini qiymətləndirməyə imkan verir.\n\nMetric Analytics olaraq biz Power BI, Tableau və digər BI alətləri ilə fərdi dashboard həlləri hazırlayırıq."
+      }
+    }
+  },
+  "about": {
+    "badge": "Haqqımızda",
+    "title": "Haqqımızda",
+    "subtitle": "Metric Analytics - Datalar danışır",
+    "storyTitle": "Metric Analytics - Şirkətimiz Haqqında",
+    "vision": "Vizyonumuz",
+    "visionText": "Metric-i dünyanın müxtəlif ölkələrindəki bizneslərin asanlıqla inteqrasiya olaraq, strateji və operativ qərarlarını bizim analitik ekosistemimiz üzərindən verdiyi çevik və universal bir analitika platformasına çevirmək.",
+    "mission": "Missiyamız",
+    "missionText": "Müxtəlif sektorlarda fəaliyyət göstərən bizneslərə avtomatlaşdırılmış analitik həllər təqdim edərək onların daha ağıllı qərarlar verməsini, vaxta və resurslara qənaət etməsini və dayanıqlı inkişafını təmin edirik.",
+    "team": "Komandamız",
+    "teamSubtitle": "Təcrübəli mütəxəssislərdən ibarət komandamız",
+    "productsTitle": "Xidmətlərimiz",
+    "productsSubtitle": "Analitik ekosistemimizin əsas komponentləri",
+    "whyUs": "Niyə biz?",
+    "whyUsSubtitle": "Metric-i seçməyiniz üçün əsas səbəblər",
+    "partnersTitle": "Tərəfdaşlarımız",
+    "features": {
+      "solutions": "Biznesə uyğun həllər",
+      "solutionsDesc": "Hər sektorun spesifik ehtiyacına uyğunlaşdırılmış analitik sistemlər",
+      "experience": "Real təcrübə",
+      "experienceDesc": "Müxtəlif şirkətlərdə tətbiq olunmuş və nəticə vermiş həllər",
+      "analytics": "360 dərəcə analitika",
+      "analyticsDesc": "Daha ağıllı və sürətli qərar, daha güclü nəzarət və daha aydın idarəetmə imkanı yaradırıq",
+      "security": "Etibarlılıq və məxfilik",
+      "securityDesc": "Məlumat təhlükəsizliyi və məxfilik yanaşmamızın əsas hissəsidir"
+    },
+    "companyDescription": "2021-ci ildə təsis edilmiş Metric Analytics, müasir biznes dünyasında analitika və strateji həllər sahəsində xidmətlər təqdim edən bir şirkətdir. Müxtəlif sektorlar üzrə analitik hesabatlılıq sistemi, data əsaslı ağıllı bildiriş sistemi, süni intellekt əsaslı həllər, biznes analitika konsultasiyaları və data əsaslı şübhəli məqamların aşkarlanması həlləri təqdim edirik.",
+    "companyPhilosophy": "Biz inanırıq ki, analitika yalnız məlumat toplamaqla kifayətlənmir - bu, şirkətlərin hədəflərinə çatmalarına və daha effektiv fəaliyyət göstərmələrinə kömək edən güclü bir alətdir. Akademik biliklərimizi və praktiki təcrübəmizi birləşdirərək, müştərilərimizin ehtiyaclarına ən uyğun və ən innovativ həlləri təqdim edirik.",
+    "companyApproach": "Metric Analytics olaraq, hər müştəriyə fərdi yanaşma və dərin təhlil təqdim edirik, şirkətlərin böyüməsini və fəaliyyətlərinin optimallaşdırılmasını təmin edirik."
+  },
+  "contact": {
+    "badge": "Əlaqə",
+    "title": "Bizimlə əlaqə",
+    "subtitle": "Layihəniz haqqında danışmaq üçün bizimlə əlaqə saxlayın",
+    "info": "Əlaqə məlumatları",
+    "email": "Email",
+    "phone": "Telefon",
+    "address": "Ünvan",
+    "addressValue": "Ajami Nakhchivani, Bakı",
+    "name": "Ad Soyad",
+    "company": "Şirkət",
+    "serviceQuestion": "Hansı xidmət ilə maraqlanırsınız?",
+    "select": "Seçin",
+    "other": "Digər",
+    "message": "Mesaj",
+    "sending": "Göndərilir...",
+    "send": "Göndər",
+    "successTitle": "Müraciətiniz göndərildi!",
+    "successText": "Ən qısa zamanda sizinlə əlaqə saxlayacağıq."
+  },
+  "cta": {
+    "title": "Biznesinizdə analitikanın real gücünü ortaya çıxaraq",
+    "subtitle": "Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın və sizin üçün ən uyğun həlli təklif edək.",
+    "button": "Bizimlə əlaqə",
+    "servicesTitle": "Hansı xidmət sizin üçün uyğundur?",
+    "servicesSubtitle": "Pulsuz konsultasiya ilə ehtiyaclarınızı birlikdə müəyyənləşdirək",
+    "servicesButton": "Pulsuz konsultasiya"
+  },
+  "footer": {
+    "slogan": "Datalar danışır",
+    "description": "Analitik həllərimizdən faydalanaraq biznesinizi inkişaf etdirin.",
+    "pages": "Səhifələr",
+    "servicesTitle": "Xidmətlər",
+    "contactTitle": "Əlaqə",
+    "rights": "Bütün hüquqlar qorunur."
+  },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "back": "Ana səhifəyə qayıt"
+  },
+  "testimonialQuotes": {
+    "0": "Metric şirkətinin məhsulları biznesimizi daha effektiv idarə etməyə, prosesləri daha aydın görməyə və qərarları daha operativ verməyə ciddi dəstək olur. Metric komandası isə hər zaman öz komandamızın bir hissəsi kimi çevik və operativ şəkildə dəstək göstərir.",
+    "1": "Metric-in məhsulları riskləri və fürsətləri vaxtında görməyimizə, qərarları daha çevik və daha düzgün verməyimizə əhəmiyyətli töhfə verir. Detallı analizlər isə proseslərin optimallaşdırılması və planlamanın daha dəqiq aparılması üçün güclü dəstək yaradır.",
+    "2": "Metric-in analitik həlləri dəfələrlə bizi yanlış investisiya və səhv qərar risklərindən uzaq tutub, daha dəqiq, əsaslı və effektiv qərarlar verməyimizə əhəmiyyətli töhfə verib."
+  }
+}

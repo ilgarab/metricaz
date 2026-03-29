@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
@@ -16,7 +17,15 @@ import { useTheme } from "@/hooks/useTheme";
 
 export default function Index() {
   const { theme } = useTheme();
+  const { t } = useTranslation();
   const heroBg = theme === "dark" ? heroBgDark : heroBgLight;
+
+  const serviceDescs: Record<string, string> = {
+    "metric-bi": t("services.metricBi"),
+    "metric-alert": t("services.metricAlert"),
+    "metric-ai": t("services.metricAi"),
+    "metric-fraud": t("services.metricFraud"),
+  };
 
   return (
     <div>
@@ -41,7 +50,7 @@ export default function Index() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="mb-6 inline-block rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
-                Data Analitika Agentliyi
+                {t("hero.badge")}
               </span>
             </motion.div>
             <motion.h1
@@ -51,9 +60,9 @@ export default function Index() {
               className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl"
               style={{ lineHeight: "1.08" }}
             >
-              Biznesinizi{" "}
-              <span className="gradient-text">data əsaslı</span>{" "}
-              idarə edin
+              {t("hero.title1")}{" "}
+              <span className="gradient-text">{t("hero.titleHighlight")}</span>{" "}
+              {t("hero.title2")}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
@@ -62,7 +71,7 @@ export default function Index() {
               className="mx-auto mt-6 max-w-xl text-base text-muted-foreground md:text-lg"
               style={{ lineHeight: "1.7" }}
             >
-              Analitik həllərimizdən faydalanaraq biznesinizi inkişaf etdirin
+              {t("hero.subtitle")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
@@ -72,12 +81,12 @@ export default function Index() {
             >
               <Link to="/services">
                 <Button size="lg" className="gap-2 active:scale-[0.97]">
-                  Xidmətlərimiz <ArrowRight size={16} />
+                  {t("hero.servicesBtn")} <ArrowRight size={16} />
                 </Button>
               </Link>
               <Link to="/contact">
                 <Button variant="outline" size="lg" className="active:scale-[0.97]">
-                  Bizimlə əlaqə
+                  {t("hero.contactBtn")}
                 </Button>
               </Link>
             </motion.div>
@@ -89,9 +98,9 @@ export default function Index() {
       <section className="section-padding-sm border-y border-border bg-card/50">
         <div className="container">
           <div className="grid grid-cols-3 gap-8">
-            <StatCounter value={50} suffix="+" label="Tamamlanmış layihə" index={0} />
-            <StatCounter value={30} suffix="+" label="Müştəri" index={1} />
-            <StatCounter value={10} suffix="+" label="İl təcrübə" index={2} />
+            <StatCounter value={50} suffix="+" label={t("stats.projects")} index={0} />
+            <StatCounter value={30} suffix="+" label={t("stats.clients")} index={1} />
+            <StatCounter value={10} suffix="+" label={t("stats.experience")} index={2} />
           </div>
         </div>
       </section>
@@ -100,18 +109,18 @@ export default function Index() {
       <section className="section-padding">
         <div className="container">
           <SectionHeader
-            badge="Xidmətlər"
-            title="Data əsaslı həllər"
-            subtitle="Biznesinizin ehtiyaclarına uyğun analitik xidmətlər təqdim edirik"
+            badge={t("services.badge")}
+            title={t("services.title")}
+            subtitle={t("services.subtitle")}
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
             {services.map((s, i) => (
-              <ServiceCard key={s.id} {...s} index={i} />
+              <ServiceCard key={s.id} {...s} shortDesc={serviceDescs[s.id] || s.shortDesc} index={i} />
             ))}
           </div>
           <div className="mt-10 text-center">
             <Link to="/services" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              Bütün xidmətlər <ChevronRight size={14} />
+              {t("services.allServices")} <ChevronRight size={14} />
             </Link>
           </div>
         </div>
@@ -121,13 +130,13 @@ export default function Index() {
       <section className="section-padding bg-card/30">
         <div className="container">
           <SectionHeader
-            badge="Tərəfdaşlar"
-            title="Tərəfdaşlar"
+            badge={t("partners.badge")}
+            title={t("partners.title")}
           />
           <div className="mx-auto max-w-4xl">
             <img
               src={partnersImg}
-              alt="Tərəfdaşlarımız"
+              alt={t("partners.alt")}
               className="w-full rounded-2xl"
             />
           </div>
@@ -138,8 +147,8 @@ export default function Index() {
       <section className="section-padding">
         <div className="container">
           <SectionHeader
-            badge="Rəylər"
-            title="Müştəri rəyləri"
+            badge={t("testimonials.badge")}
+            title={t("testimonials.title")}
           />
           <TestimonialSlider />
         </div>
@@ -149,9 +158,9 @@ export default function Index() {
       <section className="section-padding bg-card/30">
         <div className="container">
           <SectionHeader
-            badge="Bloq"
-            title="Son məqalələr"
-            subtitle="Data analitikası sahəsindəki ən son trendlər və tövsiyələr"
+            badge={t("blog.badge")}
+            title={t("blog.title")}
+            subtitle={t("blog.subtitle")}
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.slice(0, 3).map((p, i) => (
@@ -160,7 +169,7 @@ export default function Index() {
           </div>
           <div className="mt-10 text-center">
             <Link to="/blog" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              Bütün məqalələr <ChevronRight size={14} />
+              {t("blog.allPosts")} <ChevronRight size={14} />
             </Link>
           </div>
         </div>

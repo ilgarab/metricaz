@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import metricLogo from "@/assets/metric-icon.png";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-border bg-card">
       <div className="container section-padding-sm">
@@ -12,19 +15,19 @@ export default function Footer() {
               <img src={metricLogo} alt="Metric" className="h-7 w-auto" />
               <span>metric</span>
             </Link>
-            <p className="mt-2 text-sm font-medium text-primary">Datalar danışır</p>
+            <p className="mt-2 text-sm font-medium text-primary">{t("footer.slogan")}</p>
             <p className="mt-2 text-sm text-muted-foreground" style={{ lineHeight: "1.7" }}>
-              Analitik həllərimizdən faydalanaraq biznesinizi inkişaf etdirin.
+              {t("footer.description")}
             </p>
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Səhifələr</h4>
+            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.pages")}</h4>
             <ul className="space-y-2.5 text-sm">
               {[
-                ["/services", "Xidmətlər"],
-                ["/blog", "Bloq"],
-                ["/about", "Haqqımızda"],
+                ["/services", t("nav.services")],
+                ["/blog", t("nav.blog")],
+                ["/about", t("nav.about")],
               ].map(([href, label]) => (
                 <li key={href}>
                   <Link to={href} className="text-muted-foreground transition-colors hover:text-foreground">{label}</Link>
@@ -34,7 +37,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Xidmətlər</h4>
+            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.servicesTitle")}</h4>
             <ul className="space-y-2.5 text-sm">
               {[
                 "Metric BI",
@@ -48,7 +51,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">Əlaqə</h4>
+            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.contactTitle")}</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail size={14} className="text-primary" /> info@metric.az
@@ -57,14 +60,14 @@ export default function Footer() {
                 <Phone size={14} className="text-primary" /> +994 51 652 49 45
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
-                <MapPin size={14} className="mt-0.5 text-primary" /> Ajami Nakhchivani, Bakı
+                <MapPin size={14} className="mt-0.5 text-primary" /> {t("contact.addressValue")}
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Metric. Bütün hüquqlar qorunur.
+          © {new Date().getFullYear()} Metric. {t("footer.rights")}
         </div>
       </div>
     </footer>

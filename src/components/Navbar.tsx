@@ -2,22 +2,25 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import metricLogo from "@/assets/metric-icon.png";
-
-const links = [
-  { href: "/services", label: "Xidmətlər" },
-  { href: "/blog", label: "Bloq" },
-  { href: "/about", label: "Haqqımızda" },
-  { href: "/contact", label: "Əlaqə" },
-];
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
+  const links = [
+    { href: "/services", label: t("nav.services") },
+    { href: "/blog", label: t("nav.blog") },
+    { href: "/about", label: t("nav.about") },
+    { href: "/contact", label: t("nav.contact") },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -56,6 +59,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-2 md:flex">
+          <LanguageSwitcher />
           <button
             onClick={toggleTheme}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:scale-95"
@@ -64,11 +68,12 @@ export default function Navbar() {
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
           </button>
           <Link to="/contact">
-            <Button size="sm" className="active:scale-[0.97]">Müraciət et</Button>
+            <Button size="sm" className="active:scale-[0.97]">{t("nav.cta")}</Button>
           </Link>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher />
           <button
             onClick={toggleTheme}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted"
@@ -105,7 +110,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link to="/contact" className="mt-2">
-                <Button className="w-full active:scale-[0.97]">Müraciət et</Button>
+                <Button className="w-full active:scale-[0.97]">{t("nav.cta")}</Button>
               </Link>
             </div>
           </motion.div>

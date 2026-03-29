@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { testimonials } from "@/data/mockData";
 
 export default function TestimonialSlider() {
   const [current, setCurrent] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const timer = setInterval(() => setCurrent((c) => (c + 1) % testimonials.length), 6000);
@@ -13,7 +15,7 @@ export default function TestimonialSlider() {
 
   const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
   const next = () => setCurrent((c) => (c + 1) % testimonials.length);
-  const t = testimonials[current];
+  const tData = testimonials[current];
 
   return (
     <div className="relative mx-auto max-w-3xl">
@@ -25,14 +27,14 @@ export default function TestimonialSlider() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
         >
-          <p className="mb-8 text-lg md:text-xl" style={{ lineHeight: "1.8" }}>"{t.quote}"</p>
+          <p className="mb-8 text-lg md:text-xl" style={{ lineHeight: "1.8" }}>"{t(`testimonialQuotes.${current}`)}"</p>
           <div className="flex items-center gap-4">
-            {t.logo && (
-              <img src={t.logo} alt={t.company} className="h-10 w-10 rounded-full border border-border object-contain bg-white p-0.5" />
+            {tData.logo && (
+              <img src={tData.logo} alt={tData.company} className="h-10 w-10 rounded-full border border-border object-contain bg-white p-0.5" />
             )}
             <div>
-              <p className="font-semibold">{t.author}</p>
-              <p className="text-sm text-muted-foreground">{t.role}, {t.company}</p>
+              <p className="font-semibold">{tData.author}</p>
+              <p className="text-sm text-muted-foreground">{tData.role}, {tData.company}</p>
             </div>
           </div>
         </motion.div>

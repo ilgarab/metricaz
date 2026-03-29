@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
 interface CTABannerProps {
@@ -10,11 +11,13 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  title = "Biznesinizdə analitikanın real gücünü ortaya çıxaraq",
-  subtitle = "Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın və sizin üçün ən uyğun həlli təklif edək.",
-  buttonText = "Bizimlə əlaqə",
+  title,
+  subtitle,
+  buttonText,
   buttonLink = "/contact",
 }: CTABannerProps) {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -28,11 +31,11 @@ export default function CTABanner({
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--primary)/0.1),transparent_60%)]" />
           <div className="relative z-10">
             <h2 className="text-balance text-2xl font-bold tracking-tight md:text-4xl" style={{ lineHeight: "1.15" }}>
-              {title}
+              {title || t("cta.title")}
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-muted-foreground">{subtitle}</p>
+            <p className="mx-auto mt-4 max-w-xl text-muted-foreground">{subtitle || t("cta.subtitle")}</p>
             <Link to={buttonLink}>
-              <Button size="lg" className="mt-8 active:scale-[0.97]">{buttonText}</Button>
+              <Button size="lg" className="mt-8 active:scale-[0.97]">{buttonText || t("cta.button")}</Button>
             </Link>
           </div>
         </div>

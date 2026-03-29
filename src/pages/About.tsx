@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Target, Eye, Crosshair, Shield, Compass, BarChart3 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
-import { teamMembers, companyInfo } from "@/data/mockData";
+import { teamMembers } from "@/data/mockData";
 import partnersImg from "@/assets/partners.png";
 import sectionsImg from "@/assets/4-sections.png";
 import rovshanImg from "@/assets/rovshan.jpg";
@@ -16,19 +17,21 @@ const teamImages: Record<string, string> = {
   sona: sonaImg,
 };
 
-const features = [
-  { icon: Crosshair, title: "Biznesə uyğun həllər", desc: "Hər sektorun spesifik ehtiyacına uyğunlaşdırılmış analitik sistemlər" },
-  { icon: Compass, title: "Real təcrübə", desc: "Müxtəlif şirkətlərdə tətbiq olunmuş və nəticə vermiş həllər" },
-  { icon: BarChart3, title: "360 dərəcə analitika", desc: "Daha ağıllı və sürətli qərar, daha güclü nəzarət və daha aydın idarəetmə imkanı yaradırıq" },
-  { icon: Shield, title: "Etibarlılıq və məxfilik", desc: "Məlumat təhlükəsizliyi və məxfilik yanaşmamızın əsas hissəsidir" },
-];
-
 export default function About() {
+  const { t } = useTranslation();
+
+  const features = [
+    { icon: Crosshair, title: t("about.features.solutions"), desc: t("about.features.solutionsDesc") },
+    { icon: Compass, title: t("about.features.experience"), desc: t("about.features.experienceDesc") },
+    { icon: BarChart3, title: t("about.features.analytics"), desc: t("about.features.analyticsDesc") },
+    { icon: Shield, title: t("about.features.security"), desc: t("about.features.securityDesc") },
+  ];
+
   return (
     <div className="pt-16">
       <section className="hero-gradient section-padding">
         <div className="container">
-          <SectionHeader badge="Haqqımızda" title="Haqqımızda" subtitle="Metric Analytics - Datalar danışır" />
+          <SectionHeader badge={t("about.badge")} title={t("about.title")} subtitle={t("about.subtitle")} />
         </div>
       </section>
 
@@ -39,20 +42,20 @@ export default function About() {
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <img
                 src={aboutHeroImg}
-                alt="Metric Analytics komandası"
+                alt="Metric Analytics"
                 className="w-full rounded-2xl border border-border shadow-lg"
               />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-              <h2 className="mb-4 text-2xl font-bold">Metric Analytics – Şirkətimiz Haqqında</h2>
+              <h2 className="mb-4 text-2xl font-bold">{t("about.storyTitle")}</h2>
               <p className="mb-4 text-muted-foreground" style={{ lineHeight: "1.8" }}>
-                {companyInfo.description}
+                {t("about.companyDescription")}
               </p>
               <p className="mb-4 text-muted-foreground" style={{ lineHeight: "1.8" }}>
-                {companyInfo.philosophy}
+                {t("about.companyPhilosophy")}
               </p>
               <p className="text-muted-foreground" style={{ lineHeight: "1.8" }}>
-                {companyInfo.approach}
+                {t("about.companyApproach")}
               </p>
             </motion.div>
           </div>
@@ -65,13 +68,13 @@ export default function About() {
           <div className="grid gap-6 md:grid-cols-2">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glow-card p-8">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent"><Eye size={24} /></div>
-              <h3 className="mb-3 text-xl font-bold"><h3 className="mb-3 text-xl font-bold">Vizyonumuz</h3></h3>
-              <p className="text-muted-foreground" style={{ lineHeight: "1.7" }}>Metric-i dünyanın müxtəlif ölkələrindəki bizneslərin asanlıqla inteqrasiya olaraq, strateji və operativ qərarlarını bizim analitik ekosistemimiz üzərindən verdiyi çevik və universal bir analitika platformasına çevirmək.</p>
+              <h3 className="mb-3 text-xl font-bold">{t("about.vision")}</h3>
+              <p className="text-muted-foreground" style={{ lineHeight: "1.7" }}>{t("about.visionText")}</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="glow-card p-8">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary"><Target size={24} /></div>
-              <h3 className="mb-3 text-xl font-bold">Missiyamız</h3>
-              <p className="text-muted-foreground" style={{ lineHeight: "1.7" }}>Müxtəlif sektorlarda fəaliyyət göstərən bizneslərə avtomatlaşdırılmış analitik həllər təqdim edərək onların daha ağıllı qərarlar verməsini, vaxta və resurslara qənaət etməsini və dayanıqlı inkişafını təmin edirik.</p>
+              <h3 className="mb-3 text-xl font-bold">{t("about.mission")}</h3>
+              <p className="text-muted-foreground" style={{ lineHeight: "1.7" }}>{t("about.missionText")}</p>
             </motion.div>
           </div>
         </div>
@@ -80,7 +83,7 @@ export default function About() {
       {/* Team */}
       <section className="section-padding">
         <div className="container">
-          <SectionHeader title="Komandamız" subtitle="Təcrübəli mütəxəssislərdən ibarət komandamız" />
+          <SectionHeader title={t("about.team")} subtitle={t("about.teamSubtitle")} />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map((m, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="glow-card p-6 text-center">
@@ -104,14 +107,14 @@ export default function About() {
       {/* Products Overview */}
       <section className="section-padding-sm">
         <div className="container">
-          <SectionHeader title="Xidmətlərimiz" subtitle="Analitik ekosistemimizin əsas komponentləri" />
+          <SectionHeader title={t("about.productsTitle")} subtitle={t("about.productsSubtitle")} />
           <div className="mx-auto max-w-5xl">
             <motion.img
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={sectionsImg}
-              alt="Metric məhsulları - BI, Alert, AI, Fraud"
+              alt="Metric - BI, Alert, AI, Fraud"
               className="w-full rounded-2xl"
             />
           </div>
@@ -121,7 +124,7 @@ export default function About() {
       {/* Why us */}
       <section className="section-padding bg-card/30">
         <div className="container">
-          <SectionHeader title="Niyə biz?" subtitle="Metric-i seçməyiniz üçün əsas səbəblər" />
+          <SectionHeader title={t("about.whyUs")} subtitle={t("about.whyUsSubtitle")} />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((f, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="glow-card p-6 text-center">
@@ -137,11 +140,11 @@ export default function About() {
       {/* Partners */}
       <section className="section-padding-sm">
         <div className="container">
-          <SectionHeader title="Tərəfdaşlarımız" />
+          <SectionHeader title={t("about.partnersTitle")} />
           <div className="mx-auto max-w-4xl">
             <img
               src={partnersImg}
-              alt="Tərəfdaşlarımız"
+              alt={t("partners.alt")}
               className="w-full rounded-2xl"
             />
           </div>
