@@ -26,7 +26,7 @@ export default function Index() {
           <img
             src={heroBg}
             alt=""
-            className="h-full w-full object-cover opacity-60 dark:opacity-80"
+            className="h-full w-full object-cover opacity-90 dark:opacity-80"
             width={1920}
             height={1080}
           />
