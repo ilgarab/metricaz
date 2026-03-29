@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "services": "Services",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Get in touch"
+  },
+  "hero": {
+    "badge": "Data Analytics Agency",
+    "title1": "Manage your business",
+    "titleHighlight": "data-driven",
+    "title2": "",
+    "subtitle": "Grow your business by leveraging our analytical solutions",
+    "servicesBtn": "Our Services",
+    "contactBtn": "Contact Us"
+  },
+  "stats": {
+    "projects": "Completed projects",
+    "clients": "Clients",
+    "experience": "Years of experience"
+  },
+  "services": {
+    "badge": "Services",
+    "title": "Data-driven solutions",
+    "subtitle": "We provide analytical services tailored to your business needs",
+    "allServices": "All services",
+    "pageTitle": "Our Services",
+    "pageSubtitle": "We don't just display data - we deliver solutions that turn it into decisions, control and results.",
+    "metricBi": "Dynamic analytical reporting and dashboard system for monitoring business metrics on a single platform.",
+    "metricAlert": "Smart notification system that highlights key risks and opportunities in time.",
+    "metricAi": "AI-powered analytical query and response assistant.",
+    "metricFraud": "Monitoring system that detects suspicious transactions and irregularities."
+  },
+  "partners": {
+    "badge": "Partners",
+    "title": "Partners",
+    "alt": "Our Partners"
+  },
+  "testimonials": {
+    "badge": "Reviews",
+    "title": "Client Reviews"
+  },
+  "blog": {
+    "badge": "Blog",
+    "title": "Latest articles",
+    "subtitle": "Latest trends and recommendations in data analytics",
+    "allPosts": "All articles",
+    "pageTitle": "Blog",
+    "pageSubtitle": "Latest trends, recommendations and our experience in data analytics",
+    "read": "Read",
+    "notFound": "Article not found",
+    "backToBlog": "Back to Blog",
+    "relatedPosts": "Related articles",
+    "posts": {
+      "musteri-ozel-yanasma": {
+        "title": "Personalized approach to customers based on data",
+        "excerpt": "The importance of individual customer approach and data-driven marketing.",
+        "category": "Marketing",
+        "readTime": "8 min",
+        "content": "Remember the famous lines from the Soviet-era film \"The Irony of Fate\": \"Do you really build such similar houses?\" - \"Yes, but different people live in each one.\" This approach can also be applied to modern marketing.\n\nIn the modern era, it is no longer effective to address every customer with the same message. It is necessary to segment customers based on data and apply an individual approach to each one.\n\nBy analyzing customer behavior data, we can determine which products to offer to whom, which campaigns are effective, and which customers are at risk of being lost."
+      },
+      "data-esasli-qerar": {
+        "title": "Data-driven decision making: Why does it matter?",
+        "excerpt": "The importance and application of data-driven decision making in modern business.",
+        "category": "Analytics",
+        "readTime": "6 min",
+        "content": "Data-driven decision making is one of the main pillars of modern business. Companies make hundreds of decisions every day, and the quality of these decisions directly affects the company's profitability.\n\nResearch shows that companies that implement data-driven decision-making processes show 5-6% higher productivity compared to their competitors."
+      },
+      "bi-dashboard": {
+        "title": "BI Dashboard: Your business mirror",
+        "excerpt": "The role of an effective BI dashboard in business management.",
+        "category": "BI",
+        "readTime": "5 min",
+        "content": "A BI Dashboard is a powerful tool that allows you to see all the key indicators of your business on one screen. A properly built dashboard allows a manager to assess the company's situation in seconds.\n\nAt Metric Analytics, we develop custom dashboard solutions using Power BI, Tableau and other BI tools."
+      }
+    }
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "About Us",
+    "subtitle": "Metric Analytics - Data speaks",
+    "storyTitle": "Metric Analytics - About Our Company",
+    "vision": "Our Vision",
+    "visionText": "To transform Metric into a flexible and universal analytics platform where businesses from various countries around the world can easily integrate and make their strategic and operational decisions through our analytical ecosystem.",
+    "mission": "Our Mission",
+    "missionText": "We provide automated analytical solutions to businesses operating in various sectors, enabling them to make smarter decisions, save time and resources, and ensure sustainable development.",
+    "team": "Our Team",
+    "teamSubtitle": "Our team of experienced professionals",
+    "productsTitle": "Our Services",
+    "productsSubtitle": "Core components of our analytical ecosystem",
+    "whyUs": "Why Us?",
+    "whyUsSubtitle": "Key reasons to choose Metric",
+    "partnersTitle": "Our Partners",
+    "features": {
+      "solutions": "Business-tailored solutions",
+      "solutionsDesc": "Analytical systems adapted to the specific needs of each sector",
+      "experience": "Real experience",
+      "experienceDesc": "Solutions that have been implemented and delivered results in various companies",
+      "analytics": "360-degree analytics",
+      "analyticsDesc": "We create opportunities for smarter and faster decisions, stronger control and clearer management",
+      "security": "Reliability and confidentiality",
+      "securityDesc": "Data security and confidentiality is a core part of our approach"
+    },
+    "companyDescription": "Founded in 2021, Metric Analytics is a company that provides analytics and strategic solutions in the modern business world. We offer analytical reporting systems, data-driven smart notification systems, AI-based solutions, business analytics consultations and data-driven fraud detection solutions across various sectors.",
+    "companyPhilosophy": "We believe that analytics is not just about collecting information - it is a powerful tool that helps companies achieve their goals and operate more effectively. By combining our academic knowledge and practical experience, we provide the most suitable and innovative solutions for our clients' needs.",
+    "companyApproach": "At Metric Analytics, we provide each client with an individual approach and deep analysis, ensuring company growth and optimization of operations."
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Contact Us",
+    "subtitle": "Contact us to discuss your project",
+    "info": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "addressValue": "Ajami Nakhchivani, Baku",
+    "name": "Full Name",
+    "company": "Company",
+    "serviceQuestion": "Which service are you interested in?",
+    "select": "Select",
+    "other": "Other",
+    "message": "Message",
+    "sending": "Sending...",
+    "send": "Send",
+    "successTitle": "Your request has been sent!",
+    "successText": "We will contact you as soon as possible."
+  },
+  "cta": {
+    "title": "Unlock the real power of analytics in your business",
+    "subtitle": "Contact us for a free consultation and we'll suggest the best solution for you.",
+    "button": "Contact Us",
+    "servicesTitle": "Which service is right for you?",
+    "servicesSubtitle": "Let's identify your needs together with a free consultation",
+    "servicesButton": "Free consultation"
+  },
+  "footer": {
+    "slogan": "Data speaks",
+    "description": "Grow your business by leveraging our analytical solutions.",
+    "pages": "Pages",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Return to Home"
+  },
+  "testimonialQuotes": {
+    "0": "Metric's products provide serious support in managing our business more effectively, seeing processes more clearly, and making decisions more promptly. The Metric team always provides flexible and prompt support as if they were part of our own team.",
+    "1": "Metric's products make a significant contribution to seeing risks and opportunities in time, making decisions more flexibly and correctly. Detailed analyses also provide strong support for optimizing processes and more accurate planning.",
+    "2": "Metric's analytical solutions have repeatedly kept us from wrong investment and erroneous decision risks, making a significant contribution to our ability to make more accurate, well-founded and effective decisions."
+  }
+}
