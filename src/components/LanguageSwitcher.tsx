@@ -1,26 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { useTranslation } from "react-i18next";
 
 const languages = [
-  { code: "az", label: "AZ", flag: "🇦🇿" },
-  { code: "en", label: "EN", flag: "🇬🇧" },
-  { code: "ru", label: "RU", flag: "🇷🇺" },
+  { code: "az", label: "AZ" },
+  { code: "en", label: "EN" },
+  { code: "ru", label: "RU" },
 ];
 
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
-  const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  const current = languages.find((l) => l.code === i18n.language) || languages[0];
-
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
 
   return (
     <div className="flex items-center gap-0.5">
