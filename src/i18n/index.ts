@@ -11,6 +11,7 @@ i18n
   .init({
     resources: { az: { translation: az }, en: { translation: en }, ru: { translation: ru } },
     fallbackLng: "az",
+    lng: localStorage.getItem("i18nextLng") || "az",
     interpolation: { escapeValue: false },
     detection: {
       order: ["localStorage", "navigator"],

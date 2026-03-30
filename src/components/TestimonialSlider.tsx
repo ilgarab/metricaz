@@ -9,7 +9,7 @@ export default function TestimonialSlider() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrent((c) => (c + 1) % testimonials.length), 6000);
+    const timer = setInterval(() => setCurrent((c) => (c + 1) % testimonials.length), 11000);
     return () => clearInterval(timer);
   }, []);
 
