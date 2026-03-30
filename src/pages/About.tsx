@@ -14,7 +14,6 @@ import aboutHeroImg from "@/assets/about-hero.png";
 const teamImages: Record<string, string> = {
   rovshan: rovshanImg,
   vusal: vusalImg,
-  sona: sonaImg,
 };
 
 export default function About() {
@@ -90,7 +89,7 @@ export default function About() {
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="glow-card p-6 text-center">
                 {m.image && teamImages[m.image] ? (
                   <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full border-2 border-primary/20">
-                    <img src={teamImages[m.image]} alt={m.name} className="h-full w-full object-cover object-top" />
+                    <img src={teamImages[m.image]} alt={m.name} className={`h-full w-full object-cover object-top ${m.image === 'vusal' ? 'scale-125' : ''}`} />
                   </div>
                 ) : (
                   <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/10 text-xl font-bold text-primary">
