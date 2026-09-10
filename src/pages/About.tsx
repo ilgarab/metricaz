@@ -139,12 +139,12 @@ export default function About() {
             className="mx-auto mb-6 max-w-3xl md:mb-8"
           >
             <img
-              src={cooperationMapLight.url}
+              src={cooperationMapLight}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
               className="h-auto w-full dark:hidden"
             />
             <img
-              src={cooperationMapDark.url}
+              src={cooperationMapDark}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
               className="hidden h-auto w-full dark:block"
             />
