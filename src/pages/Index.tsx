@@ -147,12 +147,12 @@ export default function Index() {
             <img
               src={cooperationMapLight}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
-              className="h-auto w-full object-contain dark:hidden"
+              className="h-auto w-1/2 object-contain dark:hidden md:w-full"
             />
             <img
               src={cooperationMapDark}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
-              className="hidden h-auto w-full object-contain dark:block"
+              className="hidden h-auto w-1/2 object-contain dark:block md:w-full"
             />
           </motion.div>
           <div className="mx-auto max-w-4xl">
