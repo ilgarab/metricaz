@@ -15,7 +15,7 @@ import heroBgLight from "@/assets/hero-bg-light.jpg";
 import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/partners-dark.png";
 import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
-import cooperationMapDarkAsset from "@/assets/metric-cooperation-map-dark.png.asset.json";
+import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
 import { useTheme } from "@/hooks/useTheme";
 
 export default function Index() {
@@ -150,7 +150,7 @@ export default function Index() {
               className="h-auto w-full object-contain dark:hidden"
             />
             <img
-              src={cooperationMapDarkAsset.url}
+              src={cooperationMapDark}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
               className="hidden h-auto w-full object-contain dark:block"
             />

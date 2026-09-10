@@ -8,7 +8,7 @@ import partnersDark from "@/assets/partners-dark.png";
 import sectionsImg from "@/assets/4-sections.png";
 import aboutHeroImg from "@/assets/about-hero.png";
 import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
-import cooperationMapDarkAsset from "@/assets/metric-cooperation-map-dark.png.asset.json";
+import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
 
 export default function About() {
   const { t } = useTranslation();
@@ -144,7 +144,7 @@ export default function About() {
               className="h-auto w-full object-contain dark:hidden"
             />
             <img
-              src={cooperationMapDarkAsset.url}
+              src={cooperationMapDark}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
               className="hidden h-auto w-full object-contain dark:block"
             />
