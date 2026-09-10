@@ -15,7 +15,7 @@ export interface RouteSeo {
 
 const staticSeo: Record<string, { title: string; description: string }> = {
   "/": {
-    title: "Metric Analytics:  Analitika və Süni İntellekt Həlləri",
+    title: "Metric Analytics: Analitika və Süni İntellekt Həlləri",
     description:
       "Analitik hesabatlar, smart bildirişlər, süni intellekt və fraud aşkarlama həlləri təqdim edirik. Biznesinizi data əsaslı idarə edin.",
   },
