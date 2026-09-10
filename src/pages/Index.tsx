@@ -132,32 +132,29 @@ export default function Index() {
       {/* Partners */}
       <section className="section-padding bg-card/30">
         <div className="container">
-          <div className="mb-12 grid grid-cols-[minmax(0,1fr)_minmax(0,auto)_minmax(0,1fr)] items-center gap-4 md:mb-16 md:gap-8">
-            <div aria-hidden="true" />
-            <SectionHeader
-              badge={t("partners.badge")}
-              title={t("partners.title")}
-              centered={true}
+          <SectionHeader
+            badge={t("partners.badge")}
+            title={t("partners.title")}
+            centered={true}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mx-auto mb-6 max-w-3xl md:mb-8"
+          >
+            <img
+              src={cooperationMapLight}
+              alt="Metric Analytics əməkdaşlıq coğrafiyası"
+              className="h-auto w-full dark:hidden"
             />
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="w-48 max-w-full justify-self-end sm:w-60 md:w-[27rem]"
-            >
-              <img
-                src={cooperationMapLight}
-                alt="Metric Analytics əməkdaşlıq coğrafiyası"
-                className="h-auto w-full dark:hidden"
-              />
-              <img
-                src={cooperationMapDark}
-                alt="Metric Analytics əməkdaşlıq coğrafiyası"
-                className="hidden h-auto w-full dark:block"
-              />
-            </motion.div>
-          </div>
+            <img
+              src={cooperationMapDark}
+              alt="Metric Analytics əməkdaşlıq coğrafiyası"
+              className="hidden h-auto w-full dark:block"
+            />
+          </motion.div>
           <div className="mx-auto max-w-4xl">
             <img
               src={partnersLight}
