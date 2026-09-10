@@ -9,6 +9,7 @@
       "DOM.Iterable"
     ],
     "module": "ESNext",
+    "resolveJsonModule": true,
     "moduleDetection": "force",
     "moduleResolution": "bundler",
     "noEmit": true,
