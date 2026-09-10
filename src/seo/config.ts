@@ -15,14 +15,14 @@ export interface RouteSeo {
 
 const staticSeo: Record<string, { title: string; description: string }> = {
   "/": {
-    title: "Data Analitika və Power BI Həlləri | Metric Analytics",
+    title: "Metric Analytics:  Analitika və Süni İntellekt Həlləri",
     description:
-      "Metric Analytics Azərbaycanda bizneslər üçün Power BI dashboard, analitik hesabatlar, smart bildirişlər, AI və fraud aşkarlama həlləri təqdim edir.",
+      "Analitik hesabatlar, smart bildirişlər, süni intellekt və fraud aşkarlama həlləri təqdim edirik. Biznesinizi data əsaslı idarə edin.",
   },
   "/services/": {
-    title: "Xidmətlərimiz - Metric BI, Alert, AI və Fraud | Metric Analytics",
+    title: "Analitika, AI və Data Həlləri | Metric Analytics",
     description:
-      "Metric BI dashboard, Metric Alert smart bildirişlər, Metric AI proqnozlaşdırma və Metric Fraud aşkarlama həlləri ilə biznesinizi gücləndirin.",
+      "Metric BI, Alert, AI və Fraud ilə biznes analitikası, data həlləri, smart bildirişlər, süni intellekt və fraud aşkarlama sistemləri.",
   },
   "/data-analitikasi/": {
     title: "Data analitikası və biznes analitikası xidmətləri | Metric Analytics",
@@ -30,9 +30,9 @@ const staticSeo: Record<string, { title: string; description: string }> = {
       "Bakıda analitika şirkəti: data analitikası, biznes analitikası, BI dashboard, hesabatların yaradılması, AI proqnoz və fraud aşkarlama xidmətləri.",
   },
   "/hesabat-sistemi/": {
-    title: "Hesabat sisteminin qurulması və reporting avtomatlaşdırılması | Metric",
+    title: "Hesabatlıq Sistemi, Reporting və Power BI | Metric Analytics",
     description:
-      "Hesabatların yaradılması və reporting sisteminin qurulması: data mənbələrinin birləşdirilməsi, BI dashboard, avtomatik hesabat və bildirişlər.",
+      "ERP, 1C, SAP, POS və CRM məlumatları üçün Power BI hesabatlıq sistemi, reporting avtomatlaşdırılması, dashboard və smart bildiriş həlləri.",
   },
   "/about/": {
     title: "Haqqımızda - Metric Analytics komandası və missiyamız",
