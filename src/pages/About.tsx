@@ -1,26 +1,16 @@
 import { motion } from "framer-motion";
-import { Target, Eye, Crosshair, Shield, Compass, BarChart3 } from "lucide-react";
+import { Target, Eye, Crosshair, Shield, Compass, BarChart3, Headset, Lightbulb } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
-import { teamMembers } from "@/data/mockData";
 import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/partners-dark.png";
 import sectionsImg from "@/assets/4-sections.png";
-import rovshanImg from "@/assets/rovshan.jpg";
-import vusalImg from "@/assets/vusal.jpg";
-import yalcinImg from "@/assets/yalcin.jpg";
 import aboutHeroImg from "@/assets/about-hero.png";
-
-const teamImages: Record<string, string> = {
-  rovshan: rovshanImg,
-  vusal: vusalImg,
-  yalcin: yalcinImg,
-};
 
 export default function About() {
   const { t } = useTranslation();
-  const visibleTeamMembers = teamMembers.filter((member) => member.name !== "Yalçın Abdulhəmidov");
+
 
   const features = [
     { icon: Crosshair, title: t("about.features.solutions"), desc: t("about.features.solutionsDesc") },
@@ -86,20 +76,16 @@ export default function About() {
       <section className="section-padding">
         <div className="container">
           <SectionHeader title={t("about.team")} subtitle={t("about.teamSubtitle")} />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {visibleTeamMembers.map((m, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="glow-card p-6 text-center">
-                {m.image && teamImages[m.image] ? (
-                  <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full border-2 border-primary/20">
-                    <img src={teamImages[m.image]} alt={m.name} className={`h-full w-full object-cover object-top ${m.image === 'vusal' ? 'scale-125' : ''}`} />
-                  </div>
-                ) : (
-                  <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/10 text-xl font-bold text-primary">
-                    {m.initials}
-                  </div>
-                )}
-                <h3 className="font-semibold">{m.name}</h3>
-                <p className="text-sm text-muted-foreground">{m.role}</p>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              { icon: BarChart3, title: t("about.teamCards.experts.title"), desc: t("about.teamCards.experts.text") },
+              { icon: Headset, title: t("about.teamCards.curators.title"), desc: t("about.teamCards.curators.text") },
+              { icon: Lightbulb, title: t("about.teamCards.innovation.title"), desc: t("about.teamCards.innovation.text") },
+            ].map((c, i) => (
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="glow-card p-6 text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary"><c.icon size={24} /></div>
+                <h3 className="mb-2 font-semibold">{c.title}</h3>
+                <p className="text-sm text-muted-foreground" style={{ lineHeight: "1.7" }}>{c.desc}</p>
               </motion.div>
             ))}
           </div>

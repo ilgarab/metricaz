@@ -87,6 +87,20 @@
     "missionText": "We provide automated analytical solutions to businesses operating in various sectors, enabling them to make smarter decisions, save time and resources, and ensure sustainable development.",
     "team": "Our Team",
     "teamSubtitle": "Our team of experienced professionals",
+    "teamCards": {
+      "experts": {
+        "title": "Analytics, BI and AI experts",
+        "text": "Our team specializes in Sales, Finance, Warehouse, Manufacturing, Marketing, Management functions and Artificial Intelligence, structuring business data and turning it into clear indicators and analytical solutions that support decision-making."
+      },
+      "curators": {
+        "title": "Customer curators",
+        "text": "A dedicated curator is responsible for each client, coordinating the entire process from identifying needs to implementing solutions and subsequent development, ensuring continuous and prompt communication at every stage."
+      },
+      "innovation": {
+        "title": "Innovation and product development team",
+        "text": "Our team constantly monitors innovations in business and analytics, applies modern approaches to existing systems, improves analytical solutions and creates new products and opportunities tailored to changing needs."
+      }
+    },
     "productsTitle": "Our Services",
     "productsSubtitle": "Core components of our analytical ecosystem",
     "whyUs": "Why Us?",
