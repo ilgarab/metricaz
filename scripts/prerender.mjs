@@ -132,8 +132,8 @@ for (const route of blogRoutes) {
     description: seo.description,
     datePublished: post.date,
     dateModified: post.date,
-    image: OG_IMAGE,
-    author: { "@type": "Organization", name: post.author },
+    image: post.image || OG_IMAGE,
+    author: { "@id": `${SITE}/#organization` },
     publisher: { "@id": `${SITE}/#organization` },
     mainEntityOfPage: `${SITE}${route}`,
   };
