@@ -13,7 +13,7 @@ import { services, blogPosts } from "@/data/mockData";
 import heroBgDark from "@/assets/hero-bg-dark.jpg";
 import heroBgLight from "@/assets/hero-bg-light.jpg";
 import partnersLight from "@/assets/partners-light.png";
-import partnersDark from "@/assets/metric-clients-dark.png.asset.json";
+import partnersDark from "@/assets/partners-dark.png";
 import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
 import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
 import { useTheme } from "@/hooks/useTheme";
@@ -162,7 +162,7 @@ export default function Index() {
               className="w-full rounded-2xl dark:hidden"
             />
             <img
-              src={partnersDark.url}
+              src={partnersDark}
               alt={t("partners.alt")}
               className="hidden w-full rounded-2xl dark:block"
             />
