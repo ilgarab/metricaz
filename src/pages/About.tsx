@@ -136,7 +136,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mx-auto -mt-6 mb-4 max-w-3xl overflow-visible md:-mt-10 md:mb-6"
+            className="mx-auto -mt-8 mb-3 max-w-3xl overflow-visible md:-mt-12 md:mb-5"
           >
             <img
               src={cooperationMapLight}
