@@ -73,12 +73,13 @@ function write(route, html) {
   return path.relative(dist, target);
 }
 
-const service = (name, description, route) => ({
+const service = (name, description, route, alternateName) => ({
   "@context": "https://schema.org",
   "@type": "Service",
   name,
   description,
   serviceType: name,
+  ...(alternateName ? { alternateName } : {}),
   areaServed: { "@type": "Country", name: "Azerbaijan" },
   provider: { "@id": `${SITE}/#organization` },
   url: `${SITE}${route}`,
@@ -87,18 +88,21 @@ const service = (name, description, route) => ({
 const serviceSchema = {
   "/data-analitikasi/": service(
     "Data analitikası və biznes analitikası",
-    "Data analitikası, biznes analitikası, Power BI dashboard qurulması, KPI izləmə, AI proqnozlaşdırma və fraud aşkarlama xidmətləri.",
+    "Data analitikası, biznes analitikası, Power BI hesabatlıq, AI analitikası və fraud aşkarlama xidmətləri.",
     "/data-analitikasi/",
+    ["biznes analitikası", "Power BI hesabatlıq", "AI analitikası", "fraud aşkarlama"],
   ),
   "/hesabat-sistemi/": service(
-    "Hesabat sisteminin qurulması",
-    "Reporting sisteminin qurulması, hesabatların yaradılması və avtomatlaşdırılması, data mənbələrinin inteqrasiyası.",
+    "Power BI hesabatlıq və reporting avtomatlaşdırılması",
+    "Power BI hesabatlıq sistemi, reporting avtomatlaşdırılması və ERP məlumat analitikası ilə data mənbələrinin inteqrasiyası.",
     "/hesabat-sistemi/",
+    ["reporting avtomatlaşdırılması", "ERP məlumat analitikası", "hesabatların yaradılması"],
   ),
   "/services/": service(
     "Metric BI, Alert, AI və Fraud həlləri",
-    "Biznes analitikası platforması: Power BI dashboard, smart bildirişlər, AI proqnoz və fraud aşkarlama.",
+    "Biznes analitikası, Power BI hesabatlıq, AI analitikası və fraud aşkarlama həlləri.",
     "/services/",
+    ["data analitikası", "biznes analitikası", "Power BI hesabatlıq", "AI analitikası", "fraud aşkarlama"],
   ),
 };
 
