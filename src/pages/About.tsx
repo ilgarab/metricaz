@@ -7,8 +7,8 @@ import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/metric-clients-dark.png.asset.json";
 import sectionsImg from "@/assets/4-sections.png";
 import aboutHeroImg from "@/assets/about-hero.png";
-import cooperationMapLight from "@/assets/metric-cooperation-map-light.png.asset.json";
-import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png.asset.json";
+import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
+import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
 
 export default function About() {
   const { t } = useTranslation();
