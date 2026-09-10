@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Eye, Crosshair, Shield, Compass, BarChart3, Headset, Lightbulb } from "lucide-react";
+import { Target, Eye, Crosshair, Shield, Compass, BarChart3, Handshake, Lightbulb } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
@@ -79,7 +79,7 @@ export default function About() {
           <div className="grid gap-6 md:grid-cols-3">
             {[
               { icon: BarChart3, title: t("about.teamCards.experts.title"), desc: t("about.teamCards.experts.text") },
-              { icon: Headset, title: t("about.teamCards.curators.title"), desc: t("about.teamCards.curators.text") },
+              { icon: Handshake, title: t("about.teamCards.curators.title"), desc: t("about.teamCards.curators.text") },
               { icon: Lightbulb, title: t("about.teamCards.innovation.title"), desc: t("about.teamCards.innovation.text") },
             ].map((c, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="glow-card p-6 text-center">
