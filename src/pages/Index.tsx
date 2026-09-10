@@ -142,17 +142,17 @@ export default function Index() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mx-auto mb-6 max-w-3xl md:mb-8"
+            className="mx-auto -mt-8 mb-4 max-w-3xl overflow-visible md:-mt-12 md:mb-6"
           >
             <img
               src={cooperationMapLight}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
-              className="h-auto w-full dark:hidden"
+              className="h-auto w-full object-contain dark:hidden"
             />
             <img
               src={cooperationMapDark}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
-              className="hidden h-auto w-full dark:block"
+              className="hidden h-auto w-full object-contain dark:block"
             />
           </motion.div>
           <div className="mx-auto max-w-4xl">
