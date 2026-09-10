@@ -144,7 +144,7 @@ export default function About() {
               className="h-auto w-full object-contain dark:hidden"
             />
             <img
-              src={cooperationMapDark}
+              src={cooperationMapDarkAsset.url}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
               className="hidden h-auto w-full object-contain dark:block"
             />
