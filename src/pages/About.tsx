@@ -141,12 +141,12 @@ export default function About() {
             <img
               src={cooperationMapLight}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
-              className="h-auto w-1/2 object-contain dark:hidden md:w-full"
+              className="mx-auto h-auto w-1/2 object-contain dark:hidden md:w-full"
             />
             <img
               src={cooperationMapDark}
               alt="Metric Analytics əməkdaşlıq coğrafiyası"
-              className="hidden h-auto w-1/2 object-contain dark:block md:w-full"
+              className="mx-auto hidden h-auto w-1/2 object-contain dark:block md:w-full"
             />
           </motion.div>
           <div className="mx-auto max-w-4xl">
