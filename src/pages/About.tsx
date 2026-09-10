@@ -1,26 +1,16 @@
 import { motion } from "framer-motion";
-import { Target, Eye, Crosshair, Shield, Compass, BarChart3 } from "lucide-react";
+import { Target, Eye, Crosshair, Shield, Compass, BarChart3, Headset, Lightbulb } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
-import { teamMembers } from "@/data/mockData";
 import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/partners-dark.png";
 import sectionsImg from "@/assets/4-sections.png";
-import rovshanImg from "@/assets/rovshan.jpg";
-import vusalImg from "@/assets/vusal.jpg";
-import yalcinImg from "@/assets/yalcin.jpg";
 import aboutHeroImg from "@/assets/about-hero.png";
-
-const teamImages: Record<string, string> = {
-  rovshan: rovshanImg,
-  vusal: vusalImg,
-  yalcin: yalcinImg,
-};
 
 export default function About() {
   const { t } = useTranslation();
-  const visibleTeamMembers = teamMembers.filter((member) => member.name !== "Yalçın Abdulhəmidov");
+
 
   const features = [
     { icon: Crosshair, title: t("about.features.solutions"), desc: t("about.features.solutionsDesc") },

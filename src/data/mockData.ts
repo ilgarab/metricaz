@@ -96,16 +96,6 @@ export const testimonials = [
   },
 ];
 
-export const teamMembers = [
-  { name: "Rövşən Nadirov", role: "Founder & CEO", initials: "RN", image: "rovshan" },
-  { name: "Yalçın Talıbov", role: "CTO", initials: "YT", image: "yalcin" },
-  { name: "Vüsal Əhmədov", role: "Head of Operations", initials: "VƏ", image: "vusal" },
-  { name: "Elsevər Musayev", role: "Head of Projects", initials: "EM" },
-  { name: "Sona Muradova", role: "Team Leader", initials: "SM" },
-  { name: "Pərvin Həsənova", role: "Data Analyst", initials: "PH" },
-  { name: "Aytac Nadirova", role: "Data Analyst", initials: "AN" },
-  { name: "Vüsal Şirinov", role: "Finance Analyst", initials: "VŞ" },
-];
 
 export const companyInfo = {
   name: "Metric Analytics",
