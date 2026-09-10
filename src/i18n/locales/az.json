@@ -87,6 +87,20 @@
     "missionText": "Müxtəlif sektorlarda fəaliyyət göstərən bizneslərə avtomatlaşdırılmış analitik həllər təqdim edərək onların daha ağıllı qərarlar verməsini, vaxta və resurslara qənaət etməsini və dayanıqlı inkişafını təmin edirik.",
     "team": "Komandamız",
     "teamSubtitle": "Təcrübəli mütəxəssislərdən ibarət komandamız",
+    "teamCards": {
+      "experts": {
+        "title": "Analitika, BI və AI ekspertləri",
+        "text": "Satış, Maliyyə, Anbar, İstehsalat, Marketinq, İdarəetmə funksiyaları və Süni İntellekt üzrə ixtisaslaşmış komandamız biznes məlumatlarını strukturlaşdırır, onları aydın göstəricilərə və qərarverməni dəstəkləyən analitik həllərə çevirir."
+      },
+      "curators": {
+        "title": "Müştəri kuratorları",
+        "text": "Hər bir müştəri ilə iş üçün məsul kurator ehtiyacların müəyyənləşdirilməsindən həllərin tətbiqi və sonrakı inkişafına qədər bütün prosesi koordinasiya edir, bütün mərhələlərdə davamlı və operativ əlaqəni təmin edir."
+      },
+      "innovation": {
+        "title": "İnnovasiya və məhsul inkişafı komandası",
+        "text": "Biznes və analitika sahəsindəki yenilikləri daim izləyən komandamız müasir yanaşmaları mövcud sistemlərə tətbiq edir, analitik həlləri təkmilləşdirir və dəyişən ehtiyaclara uyğun yeni məhsul və imkanlar yaradır."
+      }
+    },
     "productsTitle": "Xidmətlərimiz",
     "productsSubtitle": "Analitik ekosistemimizin əsas komponentləri",
     "whyUs": "Niyə biz?",
