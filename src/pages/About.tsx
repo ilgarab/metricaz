@@ -8,7 +8,7 @@ import partnersDark from "@/assets/partners-dark.png";
 import sectionsImg from "@/assets/4-sections.png";
 import aboutHeroImg from "@/assets/about-hero.png";
 import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
-import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
+import cooperationMapDarkAsset from "@/assets/metric-cooperation-map-dark.png.asset.json";
 
 export default function About() {
   const { t } = useTranslation();

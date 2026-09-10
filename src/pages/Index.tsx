@@ -15,7 +15,7 @@ import heroBgLight from "@/assets/hero-bg-light.jpg";
 import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/partners-dark.png";
 import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
-import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
+import cooperationMapDarkAsset from "@/assets/metric-cooperation-map-dark.png.asset.json";
 import { useTheme } from "@/hooks/useTheme";
 
 export default function Index() {
