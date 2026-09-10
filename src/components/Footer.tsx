@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import metricLogo from "@/assets/metric-icon.png";
 
@@ -65,6 +65,26 @@ export default function Footer() {
                 <MapPin size={14} className="mt-0.5 text-primary" /> {t("contact.addressValue")}
               </li>
             </ul>
+            <div className="mt-4 flex items-center gap-3">
+              <a
+                href="https://www.linkedin.com/company/metricanalytics1/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                <Linkedin size={16} />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100094764317816"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              >
+                <Facebook size={16} />
+              </a>
+            </div>
           </div>
         </div>
 
