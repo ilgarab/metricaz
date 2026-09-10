@@ -159,7 +159,7 @@ export default function About() {
               className="w-full rounded-2xl dark:hidden"
             />
             <img
-              src={partnersDark}
+              src={partnersDark.url}
               alt={t("partners.alt")}
               className="hidden w-full rounded-2xl dark:block"
             />
