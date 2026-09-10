@@ -132,7 +132,7 @@ export default function Index() {
       {/* Partners */}
       <section className="section-padding bg-card/30">
         <div className="container">
-          <div className="mb-12 grid items-center gap-8 md:mb-16 md:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)]">
+          <div className="mb-12 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:mb-16">
             <SectionHeader
               badge={t("partners.badge")}
               title={t("partners.title")}
@@ -143,7 +143,7 @@ export default function Index() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="min-w-0"
+              className="w-32 justify-self-end sm:w-40 md:w-48"
             >
               <img
                 src={cooperationMapLight.url}
