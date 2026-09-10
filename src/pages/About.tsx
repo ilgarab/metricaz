@@ -7,6 +7,8 @@ import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/partners-dark.png";
 import sectionsImg from "@/assets/4-sections.png";
 import aboutHeroImg from "@/assets/about-hero.png";
+import cooperationMapLight from "@/assets/metric-cooperation-map-light.png.asset.json";
+import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png.asset.json";
 
 export default function About() {
   const { t } = useTranslation();
@@ -128,7 +130,27 @@ export default function About() {
       {/* Partners */}
       <section className="section-padding-sm">
         <div className="container">
-          <SectionHeader title={t("about.partnersTitle")} />
+          <div className="mb-12 grid items-center gap-8 md:mb-16 md:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)]">
+            <SectionHeader title={t("about.partnersTitle")} centered={false} />
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="min-w-0"
+            >
+              <img
+                src={cooperationMapLight.url}
+                alt="Metric Analytics əməkdaşlıq coğrafiyası"
+                className="h-auto w-full dark:hidden"
+              />
+              <img
+                src={cooperationMapDark.url}
+                alt="Metric Analytics əməkdaşlıq coğrafiyası"
+                className="hidden h-auto w-full dark:block"
+              />
+            </motion.div>
+          </div>
           <div className="mx-auto max-w-4xl">
             <img
               src={partnersLight}
