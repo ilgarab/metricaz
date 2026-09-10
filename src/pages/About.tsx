@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
 import partnersLight from "@/assets/partners-light.png";
-import partnersDark from "@/assets/partners-dark.png";
+import partnersDark from "@/assets/metric-clients-dark.png.asset.json";
 import sectionsImg from "@/assets/4-sections.png";
 import aboutHeroImg from "@/assets/about-hero.png";
 import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
