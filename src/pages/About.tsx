@@ -7,8 +7,8 @@ import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/partners-dark.png";
 import sectionsImg from "@/assets/4-sections.png";
 import aboutHeroImg from "@/assets/about-hero.png";
-import cooperationMapLight from "@/assets/metric-cooperation-map-light.png.asset.json";
-import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png.asset.json";
+import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
+import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
 
 export default function About() {
   const { t } = useTranslation();
@@ -141,12 +141,12 @@ export default function About() {
               className="w-48 justify-self-end sm:w-60 md:w-72"
             >
               <img
-                src={cooperationMapLight.url}
+                src={cooperationMapLight}
                 alt="Metric Analytics əməkdaşlıq coğrafiyası"
                 className="h-auto w-full dark:hidden"
               />
               <img
-                src={cooperationMapDark.url}
+                src={cooperationMapDark}
                 alt="Metric Analytics əməkdaşlıq coğrafiyası"
                 className="hidden h-auto w-full dark:block"
               />
