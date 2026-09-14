@@ -5,7 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
 import partnersLight from "@/assets/partners-light.png";
 import partnersDark from "@/assets/partners-dark.png";
-import sectionsImg from "@/assets/4-sections.png";
+import sectionsImg from "@/assets/xidmetlerimiz-combined.png";
 import aboutHeroImg from "@/assets/about-hero.png";
 import cooperationMapLight from "@/assets/metric-cooperation-map-light.png";
 import cooperationMapDark from "@/assets/metric-cooperation-map-dark.png";
