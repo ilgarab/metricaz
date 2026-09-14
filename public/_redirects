@@ -1,12 +1,12 @@
 # Legacy blog path -> /blog/ (301)
-/blogs        /blog/   301!
-/blogs/*      /blog/   301!
+/blogs        /blog/   301
+/blogs/       /blog/   301
 
 # Trailing-slash canonicalisation: slash-less -> slash (single 301, no loop)
-/services            /services/            301!
-/data-analitikasi    /data-analitikasi/    301!
-/hesabat-sistemi     /hesabat-sistemi/     301!
-/about               /about/               301!
-/contact             /contact/             301!
-/blog                /blog/                301!
-/blog/:id            /blog/:id/            301!
+/services            /services/            301
+/data-analitikasi    /data-analitikasi/    301
+/hesabat-sistemi     /hesabat-sistemi/     301
+/about               /about/               301
+/contact             /contact/             301
+/blog                /blog/                301
+/blog/:id            /blog/:id/            301
