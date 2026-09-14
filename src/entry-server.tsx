@@ -2,7 +2,7 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { AppProviders, AppRoutes } from "./App";
 import { blogPosts } from "./data/mockData";
-import { SITE, OG_IMAGE, OG_IMAGE_ALT, seoForRoute, staticRoutes, blogRoutes } from "./seo/config";
+import { SITE, OG_IMAGE, OG_IMAGE_ALT, seoForRoute, jsonLdForRoute, staticRoutes, blogRoutes } from "./seo/config";
 import "./i18n";
 
 export function render(url: string) {
@@ -15,4 +15,4 @@ export function render(url: string) {
   );
 }
 
-export { blogPosts, SITE, OG_IMAGE, OG_IMAGE_ALT, seoForRoute, staticRoutes, blogRoutes };
+export { blogPosts, SITE, OG_IMAGE, OG_IMAGE_ALT, seoForRoute, jsonLdForRoute, staticRoutes, blogRoutes };
