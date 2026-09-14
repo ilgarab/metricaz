@@ -103,7 +103,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src={sectionsImg.url}
+              src={sectionsImg}
               alt="Metric - BI, Alert, AI, Fraud"
               className="w-full rounded-2xl"
             />
