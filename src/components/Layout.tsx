@@ -21,8 +21,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Navbar />
       <main className="relative z-[3] flex-1">{children}</main>
       <Footer />
-      <WhatsAppButton />
-      <ScrollToTop />
+      <aside aria-label="Quick actions">
+        <WhatsAppButton />
+        <ScrollToTop />
+      </aside>
     </div>
   );
 }
