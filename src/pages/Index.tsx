@@ -116,7 +116,7 @@ export default function Index() {
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
             {services.map((s, i) => (
-              <ServiceCard key={s.id} {...s} shortDesc={serviceDescs[s.id] || s.shortDesc} index={i} />
+              <ServiceCard key={s.id} {...s} shortDesc={serviceDescs[s.id] || s.shortDesc} index={i} to="/data-analitikasi/" />
             ))}
           </div>
           <div className="mt-10 text-center">

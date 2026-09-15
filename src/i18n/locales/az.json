@@ -169,28 +169,28 @@
   "pages": {
     "dataAnalytics": {
       "badge": "Analitika şirkəti",
-      "title": "Data analitikası və biznes analitikası xidmətləri",
-      "subtitle": "Metric Analytics - Bakıda yerləşən analitika şirkətidir. Data analitikası, biznes analitikası, BI dashboard və hesabat həlləri ilə şirkətlərə data əsaslı qərar verməyə kömək edirik.",
+      "title": "Data və biznes analitikası xidmətləri",
+      "subtitle": "Həllərimizlə biznesinizi 360° əhatə edirik",
       "ctaPrimary": "Demo istəyin",
       "ctaSecondary": "Hesabat sistemi",
       "areasTitle": "Analitika istiqamətlərimiz",
       "areasSubtitle": "Data toplanmasından proqnozlaşdırmaya qədər bütün analitika zəncirini əhatə edirik.",
       "areas": [
         {
-          "title": "Biznes analitikası (BI)",
-          "text": "Satış, maliyyə, anbar və müştəri göstəricilərini vahid BI dashboard-da toplayırıq. Rəhbərlik bir ekrandan bütün biznesi izləyir."
+          "title": "Biznes Analitikası (BI)",
+          "text": "Bir ekrandan bütün biznesi izləyin. Satış, maliyyə, anbar, müştəri və digər biznes göstəricilərini vahid BI dashboard-da toplayırıq."
         },
         {
-          "title": "Data analitikası və modelləşdirmə",
-          "text": "Xam datanı təmizləyir, strukturlaşdırır və biznes suallarına cavab verən analitik modellərə çeviririk."
+          "title": "Data Strukturu və mühəndislik",
+          "text": "Müxtəlif data mənbələri birləşdirir, xam datanı təmizləyir, strukturlaşdırır və biznes suallarına cavab verən analitik modellərə çeviririk."
         },
         {
           "title": "Hesabatların yaradılması",
-          "text": "Gündəlik, həftəlik və aylıq hesabatlar avtomatlaşır - manual Excel işi aradan qalxır."
+          "text": "Dövrlük hesabatlar avtomatlaşır, manual işlər və şirkətdaxili data uyğunsuzluqları aradan qalxır."
         },
         {
           "title": "AI və proqnozlaşdırma",
-          "text": "Metric AI tələb proqnozu, müştəri davranışı və trend analizi ilə gələcək ssenariləri hesablayır."
+          "text": "Metric AI tələb proqnozu, müştəri davranışı və trend analizi ilə həm gələcək ssenariləri hesablayır həmçinin biznes məsləhətləri verir."
         },
         {
           "title": "Fraud aşkarlama",
@@ -202,7 +202,7 @@
         }
       ],
       "whyTitle": "Niyə Metric Analytics?",
-      "whyP1": "Komandamız pərakəndə, maliyyə, istehsal və xidmət sektorlarında data layihələri həyata keçirib. Hər layihədə eyni prinsipi izləyirik: əvvəlcə biznes sualını müəyyən edirik, sonra data arxitekturasını qururuq və yalnız bundan sonra dashboard hazırlayırıq. Nəticədə hesabat yalnız gözəl görünmür - qərar verməyə xidmət edir.",
+      "whyP1": "Komandamız Satış, Maliyyə, Anbar, İstehsalat, Marketinq, İdarəetmə funksiyaları və Süni İntellekt üzrə ixtisaslaşmış şəxslərdən ibarətdir. Hər layihədə eyni prinsipi izləyirik: əvvəlcə biznes sualını müəyyən edirik, sonra data arxitekturasını qururuq və sonra həllər təqdim edirik.",
       "whyP2": "Metric BI, Metric Alert, Metric AI və Metric Fraud modulları bir-birini tamamlayır: göstəriciləri izləyir, sapmaları bildirir, gələcəyi proqnozlaşdırır və riskləri aşkarlayır.",
       "linkServices": "Xidmətlərimiz",
       "linkAbout": "Haqqımızda",
