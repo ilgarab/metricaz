@@ -165,5 +165,96 @@
     "0": "Metric's products provide serious support in managing our business more effectively, seeing processes more clearly, and making decisions more promptly. The Metric team always provides flexible and prompt support as if they were part of our own team.",
     "1": "Metric's products make a significant contribution to seeing risks and opportunities in time, making decisions more flexibly and correctly. Detailed analyses also provide strong support for optimizing processes and more accurate planning.",
     "2": "Metric's analytical solutions have repeatedly kept us from wrong investment and erroneous decision risks, making a significant contribution to our ability to make more accurate, well-founded and effective decisions."
+  },
+  "pages": {
+    "dataAnalytics": {
+      "badge": "Analytics company",
+      "title": "Data analytics and business analytics services",
+      "subtitle": "Metric Analytics is an analytics company based in Baku. With data analytics, business analytics, BI dashboards and reporting solutions we help companies make data-driven decisions.",
+      "ctaPrimary": "Request a demo",
+      "ctaSecondary": "Reporting system",
+      "areasTitle": "Our analytics areas",
+      "areasSubtitle": "We cover the entire analytics chain, from data collection to forecasting.",
+      "areas": [
+        {
+          "title": "Business analytics (BI)",
+          "text": "We bring sales, finance, inventory and customer metrics together in a single BI dashboard. Management follows the whole business from one screen."
+        },
+        {
+          "title": "Data analytics and modelling",
+          "text": "We clean and structure raw data and turn it into analytical models that answer business questions."
+        },
+        {
+          "title": "Report building",
+          "text": "Daily, weekly and monthly reports are automated - manual Excel work disappears."
+        },
+        {
+          "title": "AI and forecasting",
+          "text": "Metric AI calculates future scenarios through demand forecasting, customer behaviour and trend analysis."
+        },
+        {
+          "title": "Fraud detection",
+          "text": "Metric Fraud detects anomalies in transactions and prevents losses before they happen."
+        },
+        {
+          "title": "KPI and target tracking",
+          "text": "KPIs are defined at company, department and employee level, and performance is tracked in real time."
+        }
+      ],
+      "whyTitle": "Why Metric Analytics?",
+      "whyP1": "Our team has delivered data projects in retail, finance, manufacturing and services. We follow the same principle in every project: first we define the business question, then we build the data architecture, and only after that do we build the dashboard. As a result, a report does not just look good - it supports decisions.",
+      "whyP2": "Metric BI, Metric Alert, Metric AI and Metric Fraud complement each other: they track metrics, flag deviations, forecast the future and detect risks.",
+      "linkServices": "Our services",
+      "linkAbout": "About us",
+      "ctaTitle": "Let us turn your data into value",
+      "ctaSubtitle": "In a short meeting we will review your current reporting process and propose the right analytics solution.",
+      "ctaButton": "Contact us"
+    },
+    "reporting": {
+      "badge": "Reporting system",
+      "title": "Building a reporting system and reporting automation",
+      "subtitle": "Metric Analytics builds reports, designs BI dashboards and fully automates the reporting system for your business.",
+      "ctaPrimary": "Get a free consultation",
+      "ctaSecondary": "View services",
+      "stepsTitle": "How is a reporting system built?",
+      "stepsSubtitle": "A four-stage workflow, from connecting data sources to automated alerts.",
+      "steps": [
+        {
+          "title": "1. Connecting data sources",
+          "text": "Your ERP, 1C, SAP, POS, CRM, Excel files and databases are combined in a single data warehouse. There is no need to assemble reports manually."
+        },
+        {
+          "title": "2. Building the data model",
+          "text": "A single metric dictionary is prepared for sales, finance, inventory and operations - every department sees the same figure."
+        },
+        {
+          "title": "3. Building dashboards and reports",
+          "text": "Interactive BI dashboards and daily, weekly and monthly report templates are built for management, finance and sales teams."
+        },
+        {
+          "title": "4. Automation and alerts",
+          "text": "Reports refresh automatically, and when a critical metric changes Metric Alert notifies your team."
+        }
+      ],
+      "outcomesTitle": "What do you gain?",
+      "outcomesSubtitle": "The results that change in your team's daily work once the reporting system is in place.",
+      "outcomes": [
+        {
+          "title": "From Excel to an automated reporting system",
+          "text": "Manual report preparation that used to take months is automated, and the risk of human error drops."
+        },
+        {
+          "title": "A single source of truth",
+          "text": "All departments work on the same, validated data - reporting disputes end."
+        },
+        {
+          "title": "Real-time decision support",
+          "text": "Metrics refresh during the day, so you see a problem when it happens, not at month-end close."
+        }
+      ],
+      "ctaTitle": "Let us build your reporting system together",
+      "ctaSubtitle": "We will analyse your existing data and propose the reporting architecture that fits you.",
+      "ctaButton": "Contact us"
+    }
   }
 }
