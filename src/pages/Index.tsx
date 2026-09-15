@@ -82,16 +82,14 @@ export default function Index() {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
             >
-              <Link to="/services/">
-                <Button size="lg" className="gap-2 active:scale-[0.97]">
+              <Button asChild size="lg" className="gap-2 active:scale-[0.97]">
+                <Link to="/services/">
                   {t("hero.servicesBtn")} <ArrowRight aria-hidden="true" focusable="false" size={16} />
-                </Button>
-              </Link>
-              <Link to="/contact/">
-                <Button variant="outline" size="lg" className="active:scale-[0.97]">
-                  {t("hero.contactBtn")}
-                </Button>
-              </Link>
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="active:scale-[0.97]">
+                <Link to="/contact/">{t("hero.contactBtn")}</Link>
+              </Button>
             </motion.div>
           </div>
         </div>

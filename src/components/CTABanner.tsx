@@ -34,9 +34,9 @@ export default function CTABanner({
               {title || t("cta.title")}
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-muted-foreground">{subtitle || t("cta.subtitle")}</p>
-            <Link to={buttonLink}>
-              <Button size="lg" className="mt-8 active:scale-[0.97]">{buttonText || t("cta.button")}</Button>
-            </Link>
+            <Button asChild size="lg" className="mt-8 active:scale-[0.97]">
+              <Link to={buttonLink}>{buttonText || t("cta.button")}</Link>
+            </Button>
           </div>
         </div>
       </div>
