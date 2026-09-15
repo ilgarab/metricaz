@@ -55,7 +55,7 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Metric BI, Alert, AI və Fraud ilə biznes analitikası, data həlləri, smart bildirişlər, süni intellekt və fraud aşkarlama sistemləri.",
     },
     dataAnalytics: {
-      title: "Data analitikası və biznes analitikası xidmətləri | Metric Analytics",
+      title: "Data və biznes analitikası xidmətləri | Metric Analytics",
       description:
         "Bakıda analitika şirkəti: data analitikası, biznes analitikası, BI dashboard, hesabatların yaradılması, AI proqnoz və fraud aşkarlama xidmətləri.",
     },
@@ -246,7 +246,7 @@ const service = (
 const serviceCopy: Record<Lang, Partial<Record<PageKey, { name: string; description: string; alternateName: string[] }>>> = {
   az: {
     dataAnalytics: {
-      name: "Data analitikası və biznes analitikası",
+      name: "Data və biznes analitikası",
       description:
         "Data analitikası, biznes analitikası, Power BI hesabatlıq, AI analitikası və fraud aşkarlama xidmətləri.",
       alternateName: ["biznes analitikası", "Power BI hesabatlıq", "AI analitikası", "fraud aşkarlama"],
