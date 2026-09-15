@@ -2,6 +2,8 @@ import { Link } from "@/i18n/Link";
 import { Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import metricLogo from "@/assets/metric-icon.png";
+import trustedLight from "@/assets/tb-trusted-light.svg.asset.json";
+import trustedDark from "@/assets/tb-trusted-dark.svg.asset.json";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -88,8 +90,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Metric. {t("footer.rights")}
+        <div className="mt-12 grid gap-5 border-t border-border pt-6 md:grid-cols-[1fr_auto_1fr] md:items-end">
+          <div className="justify-self-start">
+            <img src={trustedLight.url} alt="Trusted on Trustpilot" className="h-auto w-[164px] dark:hidden" />
+            <img src={trustedDark.url} alt="Trusted on Trustpilot" className="hidden h-auto w-[164px] dark:block" />
+          </div>
+          <p className="text-center text-xs text-muted-foreground md:col-start-2">
+            © {new Date().getFullYear()} Metric. {t("footer.rights")}
+          </p>
+          <div aria-hidden="true" className="hidden md:block" />
         </div>
       </div>
     </footer>
