@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@/i18n/Link";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
