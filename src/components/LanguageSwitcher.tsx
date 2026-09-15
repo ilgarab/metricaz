@@ -1,28 +1,30 @@
-import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
+import { LANGS, alternatesForPath, canonicalPath, langFromPath, localizePath } from "@/i18n/routes";
 
-const languages = [
-  { code: "az", label: "AZ" },
-  { code: "en", label: "EN" },
-  { code: "ru", label: "RU" },
-];
+const labels: Record<string, string> = { az: "AZ", en: "EN", ru: "RU" };
 
 export default function LanguageSwitcher() {
-  const { i18n } = useTranslation();
-  const activeLanguage = (i18n.resolvedLanguage || i18n.language).split("-")[0].toLowerCase();
+  const { pathname } = useLocation();
+  const activeLanguage = langFromPath(pathname);
+  const alternates = alternatesForPath(pathname);
 
   return (
     <div className="flex items-center gap-0.5">
-      {languages.map((lang) => (
-        <button
-          key={lang.code}
-          onClick={() => i18n.changeLanguage(lang.code)}
-          className={`rounded-md px-2 py-1 text-xs font-medium transition-colors hover:bg-muted ${
-            lang.code === activeLanguage ? "text-primary" : "text-muted-foreground"
-          }`}
-        >
-          {lang.label}
-        </button>
-      ))}
+      {LANGS.map((code) => {
+        const href = alternates ? alternates[code] : localizePath(canonicalPath(pathname), code);
+        return (
+          <Link
+            key={code}
+            to={href}
+            hrefLang={code}
+            className={`rounded-md px-2 py-1 text-xs font-medium transition-colors hover:bg-muted ${
+              code === activeLanguage ? "text-primary" : "text-muted-foreground"
+            }`}
+          >
+            {labels[code]}
+          </Link>
+        );
+      })}
     </div>
   );
 }
