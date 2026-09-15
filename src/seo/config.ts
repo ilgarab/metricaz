@@ -90,14 +90,12 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Business analytics, data solutions, smart alerts, artificial intelligence and fraud detection systems with Metric BI, Alert, AI and Fraud.",
     },
     dataAnalytics: {
-      title: "Data analytics and business analytics services | Metric Analytics",
-      description:
-        "We cover your business 360° with our solutions: BI dashboards, data structure and engineering, report building, AI forecasting and fraud detection.",
+      title: "Data and Business Analytics Services | Metric Analytics",
+      description: "We cover your business 360° with our solutions",
     },
     reporting: {
-      title: "Unified reporting system | Metric Analytics",
-      description:
-        "ERP system integration and modern analytical reports: a unified reporting system, BI dashboards and automated alerts.",
+      title: "Unified Reporting System | Metric Analytics",
+      description: "ERP system integration and modern analytical reports",
     },
     about: {
       title: "About us - the Metric Analytics team and our mission",
