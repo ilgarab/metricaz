@@ -171,7 +171,7 @@
     "dataAnalytics": {
       "badge": "Analytics company",
       "title": "Data analytics and business analytics services",
-      "subtitle": "Metric Analytics is an analytics company based in Baku. With data analytics, business analytics, BI dashboards and reporting solutions we help companies make data-driven decisions.",
+      "subtitle": "We cover your business 360° with our solutions",
       "ctaPrimary": "Request a demo",
       "ctaSecondary": "Reporting system",
       "areasTitle": "Our analytics areas",
@@ -179,19 +179,19 @@
       "areas": [
         {
           "title": "Business analytics (BI)",
-          "text": "We bring sales, finance, inventory and customer metrics together in a single BI dashboard. Management follows the whole business from one screen."
+          "text": "Track your entire business from one screen. We bring sales, finance, inventory, customer and other business metrics together in a single BI dashboard."
         },
         {
-          "title": "Data analytics and modelling",
-          "text": "We clean and structure raw data and turn it into analytical models that answer business questions."
+          "title": "Data structure and engineering",
+          "text": "We connect different data sources, clean and structure raw data and turn it into analytical models that answer business questions."
         },
         {
           "title": "Report building",
-          "text": "Daily, weekly and monthly reports are automated - manual Excel work disappears."
+          "text": "Periodic reports are automated, manual work and internal data inconsistencies disappear."
         },
         {
           "title": "AI and forecasting",
-          "text": "Metric AI calculates future scenarios through demand forecasting, customer behaviour and trend analysis."
+          "text": "With demand forecasting, customer behaviour and trend analysis, Metric AI both calculates future scenarios and provides business recommendations."
         },
         {
           "title": "Fraud detection",
@@ -203,7 +203,7 @@
         }
       ],
       "whyTitle": "Why Metric Analytics?",
-      "whyP1": "Our team has delivered data projects in retail, finance, manufacturing and services. We follow the same principle in every project: first we define the business question, then we build the data architecture, and only after that do we build the dashboard. As a result, a report does not just look good - it supports decisions.",
+      "whyP1": "Our team consists of specialists in Sales, Finance, Inventory, Manufacturing, Marketing, Management functions and Artificial Intelligence. We follow the same principle in every project: first we define the business question, then we build the data architecture, and then we deliver the solutions.",
       "whyP2": "Metric BI, Metric Alert, Metric AI and Metric Fraud complement each other: they track metrics, flag deviations, forecast the future and detect risks.",
       "linkServices": "Our services",
       "linkAbout": "About us",
@@ -213,8 +213,8 @@
     },
     "reporting": {
       "badge": "Reporting system",
-      "title": "Building a reporting system and reporting automation",
-      "subtitle": "Metric Analytics builds reports, designs BI dashboards and fully automates the reporting system for your business.",
+      "title": "Unified reporting system",
+      "subtitle": "ERP system integration and modern analytical reports",
       "ctaPrimary": "Get a free consultation",
       "ctaSecondary": "View services",
       "stepsTitle": "How is a reporting system built?",
