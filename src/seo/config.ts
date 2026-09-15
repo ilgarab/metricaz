@@ -25,7 +25,7 @@ export const OG_IMAGE_ALT = "Metric Analytics - data analitika və Power BI həl
 export { LANGS, DEFAULT_LANG, HTML_LANG, OG_LOCALE, canonicalPath, langFromPath, alternatesForPath };
 export type { Lang };
 
-const locales: Record<Lang, typeof az> = { az, en, ru as unknown as typeof az } as never;
+const locales = { az, en, ru } as unknown as Record<Lang, typeof az>;
 
 export interface RouteSeo {
   lang: Lang;
