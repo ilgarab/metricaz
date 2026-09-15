@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Brain, LineChart, PieChart, ShieldAlert, Target, Workflow } from "lucide-react";
+import { Brain, ChevronRight, LineChart, PieChart, ShieldAlert, Target, Workflow } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import CTABanner from "@/components/CTABanner";
 import { Button } from "@/components/ui/button";
@@ -59,6 +59,11 @@ export default function DataAnalytics() {
                 </motion.article>
               );
             })}
+          </div>
+          <div className="mt-8 text-center">
+            <Link to="/hesabat-sistemi/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
+              {t("services.whatYouGain")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
+            </Link>
           </div>
         </div>
       </section>
