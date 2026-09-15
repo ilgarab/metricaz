@@ -97,7 +97,7 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Analytics company in Baku: data analytics, business analytics, BI dashboards, report building, AI forecasting and fraud detection services.",
     },
     reporting: {
-      title: "Reporting System, Reporting Automation and Power BI | Metric Analytics",
+      title: "Unified reporting system | Metric Analytics",
       description:
         "Power BI reporting system, reporting automation, dashboards and smart alert solutions for ERP, 1C, SAP, POS and CRM data.",
     },
@@ -134,7 +134,7 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Аналитическая компания в Баку: аналитика данных, бизнес-аналитика, BI-дашборды, построение отчётов, ИИ-прогнозы и выявление мошенничества.",
     },
     reporting: {
-      title: "Система отчётности, автоматизация отчётности и Power BI | Metric Analytics",
+      title: "Единая система отчётности | Metric Analytics",
       description:
         "Система отчётности на Power BI, автоматизация отчётности, дашборды и умные уведомления для данных ERP, 1C, SAP, POS и CRM.",
     },
@@ -270,7 +270,7 @@ const serviceCopy: Record<Lang, Partial<Record<PageKey, { name: string; descript
       alternateName: ["business analytics", "Power BI reporting", "AI analytics", "fraud detection"],
     },
     reporting: {
-      name: "Power BI reporting and reporting automation",
+      name: "Unified reporting system",
       description:
         "Power BI reporting system, reporting automation and data source integration with ERP data analytics.",
       alternateName: ["reporting automation", "ERP data analytics", "report building"],
@@ -289,7 +289,7 @@ const serviceCopy: Record<Lang, Partial<Record<PageKey, { name: string; descript
       alternateName: ["бизнес-аналитика", "отчётность Power BI", "ИИ-аналитика", "выявление мошенничества"],
     },
     reporting: {
-      name: "Отчётность на Power BI и автоматизация отчётности",
+      name: "Единая система отчётности",
       description:
         "Система отчётности на Power BI, автоматизация отчётности и интеграция источников данных с аналитикой ERP.",
       alternateName: ["автоматизация отчётности", "аналитика данных ERP", "построение отчётов"],
