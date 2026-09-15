@@ -27,7 +27,7 @@ export default function Footer() {
               {[
                 ["/services/", t("nav.services")],
                 ["/data-analitikasi/", "Data analitikası"],
-                ["/hesabat-sistemi/", "Hesabat sisteminin qurulması"],
+                ["/hesabat-sistemi/", "Reporting sistemi necə qurulur?"],
                 ["/blog/", t("nav.blog")],
                 ["/about/", t("nav.about")],
               ].map(([href, label]) => (
