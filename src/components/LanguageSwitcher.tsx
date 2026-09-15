@@ -20,6 +20,8 @@ export default function LanguageSwitcher() {
             key={code}
             to={href}
             hrefLang={code}
+            aria-label={fullNames[code]}
+            aria-current={code === activeLanguage ? "true" : undefined}
             className={`rounded-md px-2 py-1 text-xs font-medium transition-colors hover:bg-muted ${
               code === activeLanguage ? "text-primary" : "text-muted-foreground"
             }`}
@@ -28,6 +30,6 @@ export default function LanguageSwitcher() {
           </Link>
         );
       })}
-    </div>
+    </nav>
   );
 }
