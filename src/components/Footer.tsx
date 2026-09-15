@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
-              <img src={metricLogo} alt="Metric" className="h-7 w-auto" />
+              <img src={metricLogo} alt="" className="h-7 w-auto" />
               <span>metric</span>
             </Link>
             <p className="mt-2 text-sm font-medium text-primary">{t("footer.slogan")}</p>
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.pages")}</h4>
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.pages")}</h2>
             <ul className="space-y-2.5 text-sm">
               {[
                 ["/services/", t("nav.services")],
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.servicesTitle")}</h4>
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.servicesTitle")}</h2>
             <ul className="space-y-2.5 text-sm">
               {[
                 "Metric BI",
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.contactTitle")}</h4>
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.contactTitle")}</h2>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail aria-hidden="true" focusable="false" size={14} className="text-primary" /> info@metric.az

@@ -42,7 +42,7 @@ export default function Navbar() {
     >
       <nav className="container flex h-16 items-center justify-between md:h-18">
         <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
-          <img src={metricLogo} alt="Metric" className="h-8 w-auto" />
+          <img src={metricLogo} alt="" className="h-8 w-auto" />
           <span>metric</span>
         </Link>
 

@@ -86,7 +86,7 @@ export default function Contact() {
           <div className="grid gap-12 lg:grid-cols-5">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:col-span-2 space-y-8">
               <div>
-                <h3 className="mb-6 text-xl font-bold">{t("contact.info")}</h3>
+                <h2 className="mb-6 text-xl font-bold">{t("contact.info")}</h2>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><Mail aria-hidden="true" focusable="false" size={18} /></div>
@@ -133,7 +133,7 @@ export default function Contact() {
                     <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
                       <Send aria-hidden="true" focusable="false" size={28} />
                     </div>
-                    <h3 className="text-xl font-bold">{t("contact.successTitle")}</h3>
+                    <h2 className="text-xl font-bold">{t("contact.successTitle")}</h2>
                     <p className="mt-2 text-muted-foreground">{t("contact.successText")}</p>
                   </div>
                 </div>
