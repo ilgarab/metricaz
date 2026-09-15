@@ -92,8 +92,8 @@ export default function Footer() {
 
         <div className="mt-12 grid gap-5 border-t border-border pt-6 md:grid-cols-[1fr_auto_1fr] md:items-end">
           <div className="justify-self-start">
-            <img src={trustedLight.url} alt="Trusted on Trustpilot" className="h-auto w-[164px] dark:hidden" />
-            <img src={trustedDark.url} alt="Trusted on Trustpilot" className="hidden h-auto w-[164px] dark:block" />
+            <img src={trustedLight.url} alt="Trusted on Trustpilot" className="h-auto w-[132px] dark:hidden" />
+            <img src={trustedDark.url} alt="Trusted on Trustpilot" className="hidden h-auto w-[132px] dark:block" />
           </div>
           <p className="text-center text-xs text-muted-foreground md:col-start-2">
             © {new Date().getFullYear()} Metric. {t("footer.rights")}
