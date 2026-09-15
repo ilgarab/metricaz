@@ -1,15 +1,18 @@
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { LANGS, alternatesForPath, canonicalPath, langFromPath, localizePath } from "@/i18n/routes";
 
 const labels: Record<string, string> = { az: "AZ", en: "EN", ru: "RU" };
+const fullNames: Record<string, string> = { az: "Azərbaycan", en: "English", ru: "Русский" };
 
 export default function LanguageSwitcher() {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
   const activeLanguage = langFromPath(pathname);
   const alternates = alternatesForPath(pathname);
 
   return (
-    <div className="flex items-center gap-0.5">
+    <nav aria-label={t("a11y.languageSwitcher")} className="flex items-center gap-0.5">
       {LANGS.map((code) => {
         const href = alternates ? alternates[code] : localizePath(canonicalPath(pathname), code);
         return (

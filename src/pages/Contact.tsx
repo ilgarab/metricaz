@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -9,6 +9,7 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const fid = useId();
 
   const { t } = useTranslation();
 
@@ -140,27 +141,27 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="glow-card space-y-5 p-6 md:p-8">
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
-                      <label className="mb-1.5 block text-sm font-medium">{t("contact.name")} *</label>
-                      <input name="name" required className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
+                      <label htmlFor={`${fid}-name`} className="mb-1.5 block text-sm font-medium">{t("contact.name")} *</label>
+                      <input id={`${fid}-name`} name="name" autoComplete="name" required className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
                     </div>
                     <div>
-                      <label className="mb-1.5 block text-sm font-medium">{t("contact.company")}</label>
-                      <input name="company" className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
+                      <label htmlFor={`${fid}-company`} className="mb-1.5 block text-sm font-medium">{t("contact.company")}</label>
+                      <input id={`${fid}-company`} name="company" autoComplete="organization" className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
                     </div>
                   </div>
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
-                      <label className="mb-1.5 block text-sm font-medium">{t("contact.email")} *</label>
-                      <input name="email" type="email" required className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
+                      <label htmlFor={`${fid}-email`} className="mb-1.5 block text-sm font-medium">{t("contact.email")} *</label>
+                      <input id={`${fid}-email`} name="email" type="email" autoComplete="email" required className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
                     </div>
                     <div>
-                      <label className="mb-1.5 block text-sm font-medium">{t("contact.phone")}</label>
-                      <input name="phone" type="tel" className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
+                      <label htmlFor={`${fid}-phone`} className="mb-1.5 block text-sm font-medium">{t("contact.phone")}</label>
+                      <input id={`${fid}-phone`} name="phone" type="tel" autoComplete="tel" className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
                     </div>
                   </div>
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium">{t("contact.serviceQuestion")}</label>
-                    <select name="service" className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+                    <label htmlFor={`${fid}-service`} className="mb-1.5 block text-sm font-medium">{t("contact.serviceQuestion")}</label>
+                    <select id={`${fid}-service`} name="service" className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
                       <option value="">{t("contact.select")}</option>
                       {serviceOptions.map((s) => (
                         <option key={s} value={s}>{s}</option>
@@ -168,8 +169,8 @@ export default function Contact() {
                     </select>
                   </div>
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium">{t("contact.message")} *</label>
-                    <textarea name="message" required rows={4} className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none" />
+                    <label htmlFor={`${fid}-message`} className="mb-1.5 block text-sm font-medium">{t("contact.message")} *</label>
+                    <textarea id={`${fid}-message`} name="message" required rows={4} className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none" />
                   </div>
                   {error && <p className="text-sm text-destructive">{error}</p>}
                   <Button type="submit" size="lg" className="w-full active:scale-[0.97]" disabled={loading}>
