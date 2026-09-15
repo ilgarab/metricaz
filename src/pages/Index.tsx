@@ -119,7 +119,12 @@ export default function Index() {
               <ServiceCard key={s.id} {...s} shortDesc={serviceDescs[s.id] || s.shortDesc} index={i} to="/data-analitikasi/" />
             ))}
           </div>
-          <div className="mt-10 text-center">
+          <div className="mt-8 text-center">
+            <Link to="/hesabat-sistemi/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
+              {t("services.whatYouGain")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
+            </Link>
+          </div>
+          <div className="mt-6 text-center">
             <Link to="/services/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
               {t("services.allServices")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
             </Link>
