@@ -10,3 +10,23 @@
 /contact             /contact/             301
 /blog                /blog/                301
 /blog/:id            /blog/:id/            301
+
+# English
+/en                     /en/                     301
+/en/services            /en/services/            301
+/en/data-analytics      /en/data-analytics/      301
+/en/reporting-system    /en/reporting-system/    301
+/en/about               /en/about/               301
+/en/contact             /en/contact/             301
+/en/blog                /en/blog/                301
+/en/blog/:id            /en/blog/:id/            301
+
+# Russian
+/ru                     /ru/                     301
+/ru/services            /ru/services/            301
+/ru/data-analytics      /ru/data-analytics/      301
+/ru/reporting-system    /ru/reporting-system/    301
+/ru/about               /ru/about/               301
+/ru/contact             /ru/contact/             301
+/ru/blog                /ru/blog/                301
+/ru/blog/:id            /ru/blog/:id/            301
