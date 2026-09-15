@@ -60,7 +60,7 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Bakıda analitika şirkəti: data analitikası, biznes analitikası, BI dashboard, hesabatların yaradılması, AI proqnoz və fraud aşkarlama xidmətləri.",
     },
     reporting: {
-      title: "Hesabatlıq Sistemi, Reporting və Power BI | Metric Analytics",
+      title: "Vahid hesabatlıq sistemi | Metric Analytics",
       description:
         "ERP, 1C, SAP, POS və CRM məlumatları üçün Power BI hesabatlıq sistemi, reporting avtomatlaşdırılması, dashboard və smart bildiriş həlləri.",
     },
@@ -252,7 +252,7 @@ const serviceCopy: Record<Lang, Partial<Record<PageKey, { name: string; descript
       alternateName: ["biznes analitikası", "Power BI hesabatlıq", "AI analitikası", "fraud aşkarlama"],
     },
     reporting: {
-      name: "Power BI hesabatlıq və reporting avtomatlaşdırılması",
+      name: "Vahid hesabatlıq sistemi",
       description:
         "Power BI hesabatlıq sistemi, reporting avtomatlaşdırılması və ERP məlumat analitikası ilə data mənbələrinin inteqrasiyası.",
       alternateName: ["reporting avtomatlaşdırılması", "ERP məlumat analitikası", "hesabatların yaradılması"],

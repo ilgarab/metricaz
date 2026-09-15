@@ -25,6 +25,7 @@
     "title": "Data əsaslı həllər",
     "subtitle": "Biznesinizin ehtiyaclarına uyğun analitik xidmətlər təqdim edirik",
     "allServices": "Bütün xidmətlər",
+    "whatYouGain": "Nə qazanırsınız?",
     "pageTitle": "Xidmətlərimiz",
     "pageSubtitle": "Datanı sadəcə göstərmirik - onu qərar, nəzarət və nəticəyə çevirən həllər təqdim edirik.",
     "metricBi": "Biznes göstəricilərini vahid platformada izləmək üçün dinamik analitik hesabat və dashboard sistemi.",
@@ -212,8 +213,8 @@
     },
     "reporting": {
       "badge": "Hesabat sistemi",
-      "title": "Hesabat sisteminin qurulması və reporting avtomatlaşdırılması",
-      "subtitle": "Metric Analytics biznesiniz üçün hesabatların yaradılması, BI dashboard-ların hazırlanması və reporting sisteminin tam avtomatlaşdırılmasını həyata keçirir.",
+      "title": "Vahid hesabatlıq sistemi",
+      "subtitle": "ERP sistemlərinin inteqrasiyası və müasir analitik hesabatlar",
       "ctaPrimary": "Pulsuz konsultasiya alın",
       "ctaSecondary": "Xidmətlərə baxın",
       "stepsTitle": "Reporting sistemi necə qurulur?",
