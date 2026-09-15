@@ -165,5 +165,96 @@
     "0": "Metric şirkətinin məhsulları biznesimizi daha effektiv idarə etməyə, prosesləri daha aydın görməyə və qərarları daha operativ verməyə ciddi dəstək olur. Metric komandası isə hər zaman öz komandamızın bir hissəsi kimi çevik və operativ şəkildə dəstək göstərir.",
     "1": "Metric-in məhsulları riskləri və fürsətləri vaxtında görməyimizə, qərarları daha çevik və daha düzgün verməyimizə əhəmiyyətli töhfə verir. Detallı analizlər isə proseslərin optimallaşdırılması və planlamanın daha dəqiq aparılması üçün güclü dəstək yaradır.",
     "2": "Metric-in analitik həlləri dəfələrlə bizi yanlış investisiya və səhv qərar risklərindən uzaq tutub, daha dəqiq, əsaslı və effektiv qərarlar verməyimizə əhəmiyyətli töhfə verib."
+  },
+  "pages": {
+    "dataAnalytics": {
+      "badge": "Analitika şirkəti",
+      "title": "Data analitikası və biznes analitikası xidmətləri",
+      "subtitle": "Metric Analytics - Bakıda yerləşən analitika şirkətidir. Data analitikası, biznes analitikası, BI dashboard və hesabat həlləri ilə şirkətlərə data əsaslı qərar verməyə kömək edirik.",
+      "ctaPrimary": "Demo istəyin",
+      "ctaSecondary": "Hesabat sistemi",
+      "areasTitle": "Analitika istiqamətlərimiz",
+      "areasSubtitle": "Data toplanmasından proqnozlaşdırmaya qədər bütün analitika zəncirini əhatə edirik.",
+      "areas": [
+        {
+          "title": "Biznes analitikası (BI)",
+          "text": "Satış, maliyyə, anbar və müştəri göstəricilərini vahid BI dashboard-da toplayırıq. Rəhbərlik bir ekrandan bütün biznesi izləyir."
+        },
+        {
+          "title": "Data analitikası və modelləşdirmə",
+          "text": "Xam datanı təmizləyir, strukturlaşdırır və biznes suallarına cavab verən analitik modellərə çeviririk."
+        },
+        {
+          "title": "Hesabatların yaradılması",
+          "text": "Gündəlik, həftəlik və aylıq hesabatlar avtomatlaşır - manual Excel işi aradan qalxır."
+        },
+        {
+          "title": "AI və proqnozlaşdırma",
+          "text": "Metric AI tələb proqnozu, müştəri davranışı və trend analizi ilə gələcək ssenariləri hesablayır."
+        },
+        {
+          "title": "Fraud aşkarlama",
+          "text": "Metric Fraud əməliyyatlardakı anomaliyaları aşkarlayır və itkilərin qarşısını əvvəlcədən alır."
+        },
+        {
+          "title": "KPI və hədəf izləmə",
+          "text": "Şirkət, şöbə və işçi səviyyəsində KPI-lar təyin olunur, icra real vaxtda izlənir."
+        }
+      ],
+      "whyTitle": "Niyə Metric Analytics?",
+      "whyP1": "Komandamız pərakəndə, maliyyə, istehsal və xidmət sektorlarında data layihələri həyata keçirib. Hər layihədə eyni prinsipi izləyirik: əvvəlcə biznes sualını müəyyən edirik, sonra data arxitekturasını qururuq və yalnız bundan sonra dashboard hazırlayırıq. Nəticədə hesabat yalnız gözəl görünmür - qərar verməyə xidmət edir.",
+      "whyP2": "Metric BI, Metric Alert, Metric AI və Metric Fraud modulları bir-birini tamamlayır: göstəriciləri izləyir, sapmaları bildirir, gələcəyi proqnozlaşdırır və riskləri aşkarlayır.",
+      "linkServices": "Xidmətlərimiz",
+      "linkAbout": "Haqqımızda",
+      "ctaTitle": "Datanızı dəyərə çevirək",
+      "ctaSubtitle": "Qısa görüşdə mövcud hesabat prosesinizi qiymətləndirək və uyğun analitika həllini təklif edək.",
+      "ctaButton": "Bizimlə əlaqə"
+    },
+    "reporting": {
+      "badge": "Hesabat sistemi",
+      "title": "Hesabat sisteminin qurulması və reporting avtomatlaşdırılması",
+      "subtitle": "Metric Analytics biznesiniz üçün hesabatların yaradılması, BI dashboard-ların hazırlanması və reporting sisteminin tam avtomatlaşdırılmasını həyata keçirir.",
+      "ctaPrimary": "Pulsuz konsultasiya alın",
+      "ctaSecondary": "Xidmətlərə baxın",
+      "stepsTitle": "Reporting sistemi necə qurulur?",
+      "stepsSubtitle": "Data mənbələrinin birləşdirilməsindən avtomatik bildirişlərə qədər dörd mərhələli iş axını.",
+      "steps": [
+        {
+          "title": "1. Data mənbələrinin birləşdirilməsi",
+          "text": "ERP, 1C, SAP, POS, CRM, Excel və verilənlər bazalarınız vahid data anbarında birləşdirilir. Manual hesabat yığmağa ehtiyac qalmır."
+        },
+        {
+          "title": "2. Data modelinin qurulması",
+          "text": "Satış, maliyyə, anbar və əməliyyat göstəriciləri üçün vahid metrik lüğəti hazırlanır - hər şöbə eyni rəqəmi görür."
+        },
+        {
+          "title": "3. Dashboard və hesabatların yaradılması",
+          "text": "Rəhbərlik, maliyyə və satış komandaları üçün interaktiv BI dashboard-lar və gündəlik, həftəlik, aylıq hesabat şablonları qurulur."
+        },
+        {
+          "title": "4. Avtomatlaşdırma və bildirişlər",
+          "text": "Hesabatlar avtomatik yenilənir, kritik göstərici dəyişəndə Metric Alert komandanıza bildiriş göndərir."
+        }
+      ],
+      "outcomesTitle": "Nə qazanırsınız?",
+      "outcomesSubtitle": "Hesabat sisteminin qurulmasından sonra komandanızın gündəlik işində dəyişən nəticələr.",
+      "outcomes": [
+        {
+          "title": "Excel-dən avtomatik reporting sisteminə",
+          "text": "Aylarla vaxt aparan manual hesabat hazırlığı avtomatlaşır, insan səhvi riski azalır."
+        },
+        {
+          "title": "Vahid həqiqət mənbəyi",
+          "text": "Bütün şöbələr eyni, təsdiqlənmiş data üzərindən işləyir - hesabat mübahisələri bitir."
+        },
+        {
+          "title": "Real vaxt qərar dəstəyi",
+          "text": "Göstəricilər gün ərzində yenilənir, problemi ay bağlananda yox, baş verəndə görürsünüz."
+        }
+      ],
+      "ctaTitle": "Hesabat sisteminizi birlikdə quraq",
+      "ctaSubtitle": "Mövcud datanızı təhlil edək və sizə uyğun reporting arxitekturasını təklif edək.",
+      "ctaButton": "Bizimlə əlaqə"
+    }
   }
 }

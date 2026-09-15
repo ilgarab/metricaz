@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@/i18n/Link";
 import { Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import metricLogo from "@/assets/metric-icon.png";

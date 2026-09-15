@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Link, useLocalizedPath } from "@/i18n/Link";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/hooks/useTheme";
 import { useTranslation } from "react-i18next";
@@ -14,12 +15,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const lp = useLocalizedPath();
 
   const links = [
-    { href: "/services/", label: t("nav.services") },
-    { href: "/blog/", label: t("nav.blog") },
-    { href: "/about/", label: t("nav.about") },
-    { href: "/contact/", label: t("nav.contact") },
+    { href: lp("/services/"), label: t("nav.services") },
+    { href: lp("/blog/"), label: t("nav.blog") },
+    { href: lp("/about/"), label: t("nav.about") },
+    { href: lp("/contact/"), label: t("nav.contact") },
   ];
 
   useEffect(() => {

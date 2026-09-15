@@ -4,40 +4,20 @@ import az from "./locales/az.json";
 import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 
-const STORAGE_KEY = "i18nextLng";
 const supportedLanguages = ["az", "en", "ru"] as const;
-const isBrowser = typeof window !== "undefined";
 
-const normalizeLanguage = (value?: string | null) => {
-  const baseLanguage = value?.split("-")[0]?.toLowerCase();
-  return supportedLanguages.includes(baseLanguage as (typeof supportedLanguages)[number]) ? baseLanguage : "az";
-};
-
-const initialLanguage = isBrowser ? normalizeLanguage(localStorage.getItem(STORAGE_KEY)) : "az";
-
-if (isBrowser && !localStorage.getItem(STORAGE_KEY)) {
-  localStorage.setItem(STORAGE_KEY, initialLanguage);
-}
-
-i18n
-  .use(initReactI18next)
-  .init({
-    resources: { az: { translation: az }, en: { translation: en }, ru: { translation: ru } },
-    fallbackLng: "az",
-    lng: initialLanguage,
-    supportedLngs: supportedLanguages,
-    load: "languageOnly",
-    interpolation: { escapeValue: false },
-  });
-
-if (isBrowser) {
-  document.documentElement.lang = initialLanguage;
-
-  i18n.on("languageChanged", (language) => {
-    const normalizedLanguage = normalizeLanguage(language);
-    localStorage.setItem(STORAGE_KEY, normalizedLanguage);
-    document.documentElement.lang = normalizedLanguage;
-  });
-}
+/**
+ * The URL is the single source of truth for the active language (see
+ * LanguageProvider in App.tsx). This base instance is always Azerbaijani;
+ * EN/RU are served by cloned instances bound to their URL prefix.
+ */
+i18n.use(initReactI18next).init({
+  resources: { az: { translation: az }, en: { translation: en }, ru: { translation: ru } },
+  fallbackLng: "az",
+  lng: "az",
+  supportedLngs: supportedLanguages,
+  load: "languageOnly",
+  interpolation: { escapeValue: false },
+});
 
 export default i18n;
