@@ -80,6 +80,7 @@ const icons = generateIcons();
 export default function FloatingDataIcons() {
   return (
     <div
+      aria-hidden="true"
       className="pointer-events-none fixed inset-0 overflow-hidden"
       style={{ zIndex: 2 }}
     >
@@ -101,7 +102,7 @@ export default function FloatingDataIcons() {
             rotate: { duration: duration * 1.5, delay, repeat: Infinity, ease: "easeInOut" },
           }}
         >
-          <Icon size={size} strokeWidth={1.5} />
+          <Icon size={size} strokeWidth={1.5} aria-hidden="true" focusable="false" />
         </motion.div>
       ))}
     </div>

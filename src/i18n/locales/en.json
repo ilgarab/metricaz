@@ -256,5 +256,18 @@
       "ctaSubtitle": "We will analyse your existing data and propose the reporting architecture that fits you.",
       "ctaButton": "Contact us"
     }
+  },
+  "a11y": {
+    "themeToggle": "Toggle theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenu": "Mobile menu",
+    "languageSwitcher": "Language selection",
+    "prevTestimonial": "Previous testimonial",
+    "nextTestimonial": "Next testimonial",
+    "showTestimonial": "Show testimonial {{n}}",
+    "scrollTop": "Back to top",
+    "whatsapp": "Message us on WhatsApp",
+    "quickActions": "Quick actions"
   }
 }

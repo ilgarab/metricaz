@@ -256,5 +256,18 @@
       "ctaSubtitle": "Mövcud datanızı təhlil edək və sizə uyğun reporting arxitekturasını təklif edək.",
       "ctaButton": "Bizimlə əlaqə"
     }
+  },
+  "a11y": {
+    "themeToggle": "Tema dəyiş",
+    "openMenu": "Menyunu aç",
+    "closeMenu": "Menyunu bağla",
+    "mobileMenu": "Mobil menyu",
+    "languageSwitcher": "Dil seçimi",
+    "prevTestimonial": "Əvvəlki rəy",
+    "nextTestimonial": "Növbəti rəy",
+    "showTestimonial": "{{n}}-ci rəyi göstər",
+    "scrollTop": "Yuxarı qayıt",
+    "whatsapp": "WhatsApp ilə yazın",
+    "quickActions": "Sürətli əməliyyatlar"
   }
 }

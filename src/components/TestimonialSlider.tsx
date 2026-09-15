@@ -20,7 +20,7 @@ export default function TestimonialSlider() {
   return (
     <div className="relative mx-auto max-w-3xl">
       <div className="glow-card p-8 md:p-12">
-        <Quote className="mb-6 text-primary/30" size={40} />
+        <Quote aria-hidden="true" focusable="false" className="mb-6 text-primary/30" size={40} />
         <motion.div
           key={current}
           initial={{ opacity: 0, y: 10 }}
@@ -40,20 +40,23 @@ export default function TestimonialSlider() {
         </motion.div>
       </div>
       <div className="mt-6 flex items-center justify-center gap-3">
-        <button onClick={prev} className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-primary hover:text-primary-foreground active:scale-95">
-          <ChevronLeft size={18} />
+        <button type="button" onClick={prev} aria-label={t("a11y.prevTestimonial")} className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-primary hover:text-primary-foreground active:scale-95">
+          <ChevronLeft aria-hidden="true" focusable="false" size={18} />
         </button>
         <div className="flex gap-2">
           {testimonials.map((_, i) => (
             <button
+              type="button"
               key={i}
               onClick={() => setCurrent(i)}
+              aria-label={t("a11y.showTestimonial", { n: i + 1 })}
+              aria-current={i === current ? "true" : undefined}
               className={`h-2 rounded-full transition-all duration-300 ${i === current ? "w-8 bg-primary" : "w-2 bg-muted-foreground/30"}`}
             />
           ))}
         </div>
-        <button onClick={next} className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-primary hover:text-primary-foreground active:scale-95">
-          <ChevronRight size={18} />
+        <button type="button" onClick={next} aria-label={t("a11y.nextTestimonial")} className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-primary hover:text-primary-foreground active:scale-95">
+          <ChevronRight aria-hidden="true" focusable="false" size={18} />
         </button>
       </div>
     </div>

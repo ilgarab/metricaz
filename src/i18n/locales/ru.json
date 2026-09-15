@@ -256,5 +256,18 @@
       "ctaSubtitle": "Мы проанализируем ваши данные и предложим подходящую архитектуру отчётности.",
       "ctaButton": "Связаться с нами"
     }
+  },
+  "a11y": {
+    "themeToggle": "Сменить тему",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "mobileMenu": "Мобильное меню",
+    "languageSwitcher": "Выбор языка",
+    "prevTestimonial": "Предыдущий отзыв",
+    "nextTestimonial": "Следующий отзыв",
+    "showTestimonial": "Показать отзыв {{n}}",
+    "scrollTop": "Наверх",
+    "whatsapp": "Написать в WhatsApp",
+    "quickActions": "Быстрые действия"
   }
 }

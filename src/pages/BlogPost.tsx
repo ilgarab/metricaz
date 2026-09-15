@@ -36,14 +36,14 @@ export default function BlogPost() {
         <div className="container">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mx-auto max-w-3xl">
             <Link to="/blog/" className="mb-6 inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
-              <ArrowLeft size={14} /> {t("blog.badge")}
+              <ArrowLeft aria-hidden="true" focusable="false" size={14} /> {t("blog.badge")}
             </Link>
             <span className="mb-3 inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">{category}</span>
             <h1 className="text-3xl font-bold tracking-tight md:text-4xl" style={{ lineHeight: "1.15" }}>{title}</h1>
             <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1"><User size={14} /> {post.author}</span>
-              <span className="flex items-center gap-1"><Calendar size={14} /> {post.date}</span>
-              <span className="flex items-center gap-1"><Clock size={14} /> {readTime}</span>
+              <span className="flex items-center gap-1"><User aria-hidden="true" focusable="false" size={14} /> {post.author}</span>
+              <span className="flex items-center gap-1"><Calendar aria-hidden="true" focusable="false" size={14} /> {post.date}</span>
+              <span className="flex items-center gap-1"><Clock aria-hidden="true" focusable="false" size={14} /> {readTime}</span>
             </div>
           </motion.div>
         </div>

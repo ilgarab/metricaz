@@ -82,16 +82,14 @@ export default function Index() {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
             >
-              <Link to="/services/">
-                <Button size="lg" className="gap-2 active:scale-[0.97]">
-                  {t("hero.servicesBtn")} <ArrowRight size={16} />
-                </Button>
-              </Link>
-              <Link to="/contact/">
-                <Button variant="outline" size="lg" className="active:scale-[0.97]">
-                  {t("hero.contactBtn")}
-                </Button>
-              </Link>
+              <Button asChild size="lg" className="gap-2 active:scale-[0.97]">
+                <Link to="/services/">
+                  {t("hero.servicesBtn")} <ArrowRight aria-hidden="true" focusable="false" size={16} />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="active:scale-[0.97]">
+                <Link to="/contact/">{t("hero.contactBtn")}</Link>
+              </Button>
             </motion.div>
           </div>
         </div>
@@ -123,7 +121,7 @@ export default function Index() {
           </div>
           <div className="mt-10 text-center">
             <Link to="/services/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              {t("services.allServices")} <ChevronRight size={14} />
+              {t("services.allServices")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
             </Link>
           </div>
         </div>
@@ -196,7 +194,7 @@ export default function Index() {
           </div>
           <div className="mt-10 text-center">
             <Link to="/blog/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              {t("blog.allPosts")} <ChevronRight size={14} />
+              {t("blog.allPosts")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
             </Link>
           </div>
         </div>

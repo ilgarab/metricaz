@@ -61,12 +61,12 @@ export default function About() {
         <div className="container">
           <div className="grid gap-6 md:grid-cols-2">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="glow-card p-8">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent"><Eye size={24} /></div>
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent"><Eye aria-hidden="true" focusable="false" size={24} /></div>
               <h3 className="mb-3 text-xl font-bold">{t("about.vision")}</h3>
               <p className="text-muted-foreground" style={{ lineHeight: "1.7" }}>{t("about.visionText")}</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="glow-card p-8">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary"><Target size={24} /></div>
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary"><Target aria-hidden="true" focusable="false" size={24} /></div>
               <h3 className="mb-3 text-xl font-bold">{t("about.mission")}</h3>
               <p className="text-muted-foreground" style={{ lineHeight: "1.7" }}>{t("about.missionText")}</p>
             </motion.div>

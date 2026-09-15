@@ -42,7 +42,7 @@ export default function Navbar() {
     >
       <nav className="container flex h-16 items-center justify-between md:h-18">
         <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
-          <img src={metricLogo} alt="Metric" className="h-8 w-auto" />
+          <img src={metricLogo} alt="" className="h-8 w-auto" />
           <span>metric</span>
         </Link>
 
@@ -63,30 +63,37 @@ export default function Navbar() {
         <div className="hidden items-center gap-2 md:flex">
           <LanguageSwitcher />
           <button
+            type="button"
             onClick={toggleTheme}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:scale-95"
-            aria-label="Tema dəyiş"
+            aria-label={t("a11y.themeToggle")}
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun aria-hidden="true" focusable="false" size={18} /> : <Moon aria-hidden="true" focusable="false" size={18} />}
           </button>
-          <Link to="/contact/">
-            <Button size="sm" className="active:scale-[0.97]">{t("nav.cta")}</Button>
-          </Link>
+          <Button asChild size="sm" className="active:scale-[0.97]">
+            <Link to="/contact/">{t("nav.cta")}</Link>
+          </Button>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
           <LanguageSwitcher />
           <button
+            type="button"
             onClick={toggleTheme}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted"
+            aria-label={t("a11y.themeToggle")}
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun aria-hidden="true" focusable="false" size={18} /> : <Moon aria-hidden="true" focusable="false" size={18} />}
           </button>
           <button
+            type="button"
             onClick={() => setOpen(!open)}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-foreground"
+            aria-label={open ? t("a11y.closeMenu") : t("a11y.openMenu")}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
           >
-            {open ? <X size={22} /> : <Menu size={22} />}
+            {open ? <X aria-hidden="true" focusable="false" size={22} /> : <Menu aria-hidden="true" focusable="false" size={22} />}
           </button>
         </div>
       </nav>
@@ -94,6 +101,7 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
+            id="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -111,9 +119,9 @@ export default function Navbar() {
                   {l.label}
                 </Link>
               ))}
-              <Link to="/contact/" className="mt-2">
-                <Button className="w-full active:scale-[0.97]">{t("nav.cta")}</Button>
-              </Link>
+              <Button asChild className="mt-2 w-full active:scale-[0.97]">
+                <Link to="/contact/">{t("nav.cta")}</Link>
+              </Button>
             </div>
           </motion.div>
         )}
