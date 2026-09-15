@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="border-t border-border bg-card">
       <div className="container section-padding-sm">
         <div className="grid gap-10 md:grid-cols-4">
-          <div className="md:col-span-1">
+          <div className="flex flex-col md:col-span-1">
             <Link to="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
               <img src={metricLogo} alt="" className="h-7 w-auto" />
               <span>metric</span>
@@ -21,6 +21,10 @@ export default function Footer() {
             <p className="mt-2 text-sm text-muted-foreground" style={{ lineHeight: "1.7" }}>
               {t("footer.description")}
             </p>
+            <div className="mt-6 hidden md:block">
+              <img src={trustedLight} alt="Trusted on Trustpilot" className="h-auto w-[72px] dark:hidden" />
+              <img src={trustedDark} alt="Trusted on Trustpilot" className="hidden h-auto w-[72px] dark:block" />
+            </div>
           </div>
 
           <div>
@@ -90,15 +94,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-5 border-t border-border pt-6 md:grid-cols-[1fr_auto_1fr] md:items-end">
-          <div className="justify-self-start">
-            <img src={trustedLight} alt="Trusted on Trustpilot" className="h-auto w-[100px] dark:hidden" />
-            <img src={trustedDark} alt="Trusted on Trustpilot" className="hidden h-auto w-[100px] dark:block" />
-          </div>
-          <p className="text-center text-xs text-muted-foreground md:col-start-2">
+        <div className="mt-8 md:hidden">
+          <img src={trustedLight} alt="Trusted on Trustpilot" className="h-auto w-[72px] dark:hidden" />
+          <img src={trustedDark} alt="Trusted on Trustpilot" className="hidden h-auto w-[72px] dark:block" />
+        </div>
+
+        <div className="mt-8 border-t border-border pt-6 text-center md:mt-12">
+          <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} Metric. {t("footer.rights")}
           </p>
-          <div aria-hidden="true" className="hidden md:block" />
         </div>
       </div>
     </footer>
