@@ -57,12 +57,12 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
     dataAnalytics: {
       title: "Data və biznes analitikası xidmətləri | Metric Analytics",
       description:
-        "Bakıda analitika şirkəti: data analitikası, biznes analitikası, BI dashboard, hesabatların yaradılması, AI proqnoz və fraud aşkarlama xidmətləri.",
+        "Həllərimizlə biznesinizi 360° əhatə edirik: BI dashboard, data strukturu və mühəndislik, hesabatların yaradılması, AI proqnoz və fraud aşkarlama.",
     },
     reporting: {
       title: "Vahid hesabatlıq sistemi | Metric Analytics",
       description:
-        "ERP, 1C, SAP, POS və CRM məlumatları üçün Power BI hesabatlıq sistemi, reporting avtomatlaşdırılması, dashboard və smart bildiriş həlləri.",
+        "ERP sistemlərinin inteqrasiyası və müasir analitik hesabatlar: vahid hesabatlıq sistemi, BI dashboard və avtomatik bildirişlər.",
     },
     about: {
       title: "Haqqımızda - Metric Analytics komandası və missiyamız",
@@ -94,12 +94,12 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
     dataAnalytics: {
       title: "Data analytics and business analytics services | Metric Analytics",
       description:
-        "Analytics company in Baku: data analytics, business analytics, BI dashboards, report building, AI forecasting and fraud detection services.",
+        "We cover your business 360° with our solutions: BI dashboards, data structure and engineering, report building, AI forecasting and fraud detection.",
     },
     reporting: {
       title: "Unified reporting system | Metric Analytics",
       description:
-        "Power BI reporting system, reporting automation, dashboards and smart alert solutions for ERP, 1C, SAP, POS and CRM data.",
+        "ERP system integration and modern analytical reports: a unified reporting system, BI dashboards and automated alerts.",
     },
     about: {
       title: "About us - the Metric Analytics team and our mission",
@@ -131,12 +131,12 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
     dataAnalytics: {
       title: "Услуги аналитики данных и бизнес-аналитики | Metric Analytics",
       description:
-        "Аналитическая компания в Баку: аналитика данных, бизнес-аналитика, BI-дашборды, построение отчётов, ИИ-прогнозы и выявление мошенничества.",
+        "Нашими решениями мы охватываем ваш бизнес на 360°: BI-дашборды, структура данных и инженерия, построение отчётов, ИИ-прогнозы и выявление мошенничества.",
     },
     reporting: {
       title: "Единая система отчётности | Metric Analytics",
       description:
-        "Система отчётности на Power BI, автоматизация отчётности, дашборды и умные уведомления для данных ERP, 1C, SAP, POS и CRM.",
+        "Интеграция ERP-систем и современные аналитические отчёты: единая система отчётности, BI-дашборды и автоматические уведомления.",
     },
     about: {
       title: "О нас - команда Metric Analytics и наша миссия",
