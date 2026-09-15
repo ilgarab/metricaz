@@ -88,21 +88,21 @@ export default function Contact() {
                 <h3 className="mb-6 text-xl font-bold">{t("contact.info")}</h3>
                 <div className="space-y-5">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><Mail size={18} /></div>
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><Mail aria-hidden="true" focusable="false" size={18} /></div>
                     <div>
                       <p className="text-sm text-muted-foreground">{t("contact.email")}</p>
                       <p className="font-medium">info@metric.az</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><Phone size={18} /></div>
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><Phone aria-hidden="true" focusable="false" size={18} /></div>
                     <div>
                       <p className="text-sm text-muted-foreground">{t("contact.phone")}</p>
                       <p className="font-medium">+994 51 652 49 45</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><MapPin size={18} /></div>
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"><MapPin aria-hidden="true" focusable="false" size={18} /></div>
                     <div>
                       <p className="text-sm text-muted-foreground">{t("contact.address")}</p>
                       <p className="font-medium">{t("contact.addressValue")}</p>
@@ -130,7 +130,7 @@ export default function Contact() {
                 <div className="flex h-full items-center justify-center rounded-xl border border-border bg-card p-12 text-center">
                   <div>
                     <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
-                      <Send size={28} />
+                      <Send aria-hidden="true" focusable="false" size={28} />
                     </div>
                     <h3 className="text-xl font-bold">{t("contact.successTitle")}</h3>
                     <p className="mt-2 text-muted-foreground">{t("contact.successText")}</p>

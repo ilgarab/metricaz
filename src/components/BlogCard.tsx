@@ -43,13 +43,13 @@ export default function BlogCard({ id, title, excerpt, category, date, readTime,
           <div className="flex flex-1 flex-col p-6">
             <div className="mb-3 flex items-center gap-3 text-xs text-muted-foreground">
               <span className="rounded-full bg-primary/10 px-2.5 py-0.5 font-medium text-primary">{translatedCategory}</span>
-              <span className="flex items-center gap-1"><Calendar size={12} /> {date}</span>
-              <span className="flex items-center gap-1"><Clock size={12} /> {translatedReadTime}</span>
+              <span className="flex items-center gap-1"><Calendar aria-hidden="true" focusable="false" size={12} /> {date}</span>
+              <span className="flex items-center gap-1"><Clock aria-hidden="true" focusable="false" size={12} /> {translatedReadTime}</span>
             </div>
             <h3 className="mb-2 text-lg font-semibold tracking-tight transition-colors group-hover:text-primary">{translatedTitle}</h3>
             <p className="mb-4 flex-1 text-sm text-muted-foreground line-clamp-3" style={{ lineHeight: "1.7" }}>{translatedExcerpt}</p>
             <span className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-all duration-200 group-hover:gap-3">
-              {t("blog.read")} <ArrowRight size={14} />
+              {t("blog.read")} <ArrowRight aria-hidden="true" focusable="false" size={14} />
             </span>
           </div>
         </div>

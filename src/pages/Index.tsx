@@ -84,7 +84,7 @@ export default function Index() {
             >
               <Link to="/services/">
                 <Button size="lg" className="gap-2 active:scale-[0.97]">
-                  {t("hero.servicesBtn")} <ArrowRight size={16} />
+                  {t("hero.servicesBtn")} <ArrowRight aria-hidden="true" focusable="false" size={16} />
                 </Button>
               </Link>
               <Link to="/contact/">
@@ -123,7 +123,7 @@ export default function Index() {
           </div>
           <div className="mt-10 text-center">
             <Link to="/services/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              {t("services.allServices")} <ChevronRight size={14} />
+              {t("services.allServices")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
             </Link>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function Index() {
           </div>
           <div className="mt-10 text-center">
             <Link to="/blog/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              {t("blog.allPosts")} <ChevronRight size={14} />
+              {t("blog.allPosts")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
             </Link>
           </div>
         </div>

@@ -56,13 +56,13 @@ export default function Footer() {
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">{t("footer.contactTitle")}</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Mail size={14} className="text-primary" /> info@metric.az
+                <Mail aria-hidden="true" focusable="false" size={14} className="text-primary" /> info@metric.az
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Phone size={14} className="text-primary" /> +994 51 652 49 45
+                <Phone aria-hidden="true" focusable="false" size={14} className="text-primary" /> +994 51 652 49 45
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
-                <MapPin size={14} className="mt-0.5 text-primary" /> {t("contact.addressValue")}
+                <MapPin aria-hidden="true" focusable="false" size={14} className="mt-0.5 text-primary" /> {t("contact.addressValue")}
               </li>
             </ul>
             <div className="mt-4 flex items-center gap-3">
@@ -73,7 +73,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
                 className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
-                <Linkedin size={16} />
+                <Linkedin aria-hidden="true" focusable="false" size={16} />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=100094764317816"
@@ -82,7 +82,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-muted text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
               >
-                <Facebook size={16} />
+                <Facebook aria-hidden="true" focusable="false" size={16} />
               </a>
             </div>
           </div>

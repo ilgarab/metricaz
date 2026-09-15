@@ -22,7 +22,7 @@ export default function ScrollToTop() {
           className="fixed bottom-24 right-6 z-50 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-lg transition-colors hover:bg-primary hover:text-primary-foreground active:scale-95"
           aria-label="Yuxarı qayıt"
         >
-          <ChevronUp size={20} />
+          <ChevronUp aria-hidden="true" focusable="false" size={20} />
         </motion.button>
       )}
     </AnimatePresence>

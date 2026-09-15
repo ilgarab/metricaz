@@ -20,7 +20,7 @@ export default function TestimonialSlider() {
   return (
     <div className="relative mx-auto max-w-3xl">
       <div className="glow-card p-8 md:p-12">
-        <Quote className="mb-6 text-primary/30" size={40} />
+        <Quote aria-hidden="true" focusable="false" className="mb-6 text-primary/30" size={40} />
         <motion.div
           key={current}
           initial={{ opacity: 0, y: 10 }}
@@ -41,7 +41,7 @@ export default function TestimonialSlider() {
       </div>
       <div className="mt-6 flex items-center justify-center gap-3">
         <button onClick={prev} className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-primary hover:text-primary-foreground active:scale-95">
-          <ChevronLeft size={18} />
+          <ChevronLeft aria-hidden="true" focusable="false" size={18} />
         </button>
         <div className="flex gap-2">
           {testimonials.map((_, i) => (
@@ -53,7 +53,7 @@ export default function TestimonialSlider() {
           ))}
         </div>
         <button onClick={next} className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-primary hover:text-primary-foreground active:scale-95">
-          <ChevronRight size={18} />
+          <ChevronRight aria-hidden="true" focusable="false" size={18} />
         </button>
       </div>
     </div>

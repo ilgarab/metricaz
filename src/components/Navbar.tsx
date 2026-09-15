@@ -67,7 +67,7 @@ export default function Navbar() {
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:scale-95"
             aria-label="Tema dəyiş"
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun aria-hidden="true" focusable="false" size={18} /> : <Moon aria-hidden="true" focusable="false" size={18} />}
           </button>
           <Link to="/contact/">
             <Button size="sm" className="active:scale-[0.97]">{t("nav.cta")}</Button>
@@ -80,13 +80,13 @@ export default function Navbar() {
             onClick={toggleTheme}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-muted"
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun aria-hidden="true" focusable="false" size={18} /> : <Moon aria-hidden="true" focusable="false" size={18} />}
           </button>
           <button
             onClick={() => setOpen(!open)}
             className="flex h-9 w-9 items-center justify-center rounded-lg text-foreground"
           >
-            {open ? <X size={22} /> : <Menu size={22} />}
+            {open ? <X aria-hidden="true" focusable="false" size={22} /> : <Menu aria-hidden="true" focusable="false" size={22} />}
           </button>
         </div>
       </nav>
