@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="border-t border-border bg-card">
       <div className="container section-padding-sm">
         <div className="grid gap-10 md:grid-cols-4">
-          <div className="flex flex-col md:col-span-1">
+          <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
               <img src={metricLogo} alt="" className="h-7 w-auto" />
               <span>metric</span>
@@ -21,10 +21,6 @@ export default function Footer() {
             <p className="mt-2 text-sm text-muted-foreground" style={{ lineHeight: "1.7" }}>
               {t("footer.description")}
             </p>
-            <div className="mt-6 hidden md:block">
-              <img src={trustedLight} alt="Trusted on Trustpilot" className="h-auto w-[72px] dark:hidden" />
-              <img src={trustedDark} alt="Trusted on Trustpilot" className="hidden h-auto w-[72px] dark:block" />
-            </div>
           </div>
 
           <div>
@@ -94,12 +90,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 md:hidden">
-          <img src={trustedLight} alt="Trusted on Trustpilot" className="h-auto w-[72px] dark:hidden" />
-          <img src={trustedDark} alt="Trusted on Trustpilot" className="hidden h-auto w-[72px] dark:block" />
+        <div className="mt-8 md:mt-10">
+          <img src={trustedLight} alt="Trusted on Trustpilot" className="h-auto w-[88px] dark:hidden" />
+          <img src={trustedDark} alt="Trusted on Trustpilot" className="hidden h-auto w-[88px] dark:block" />
         </div>
 
-        <div className="mt-8 border-t border-border pt-6 text-center md:mt-12">
+        <div className="mt-4 border-t border-border pt-4 text-center md:mt-6 md:pt-6">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} Metric. {t("footer.rights")}
           </p>
