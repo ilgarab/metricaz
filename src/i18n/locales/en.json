@@ -267,6 +267,7 @@
     "nextTestimonial": "Next testimonial",
     "showTestimonial": "Show testimonial {{n}}",
     "scrollTop": "Back to top",
-    "whatsapp": "Message us on WhatsApp"
+    "whatsapp": "Message us on WhatsApp",
+    "quickActions": "Quick actions"
   }
 }
