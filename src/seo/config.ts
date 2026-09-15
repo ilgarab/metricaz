@@ -55,14 +55,12 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Metric BI, Alert, AI və Fraud ilə biznes analitikası, data həlləri, smart bildirişlər, süni intellekt və fraud aşkarlama sistemləri.",
     },
     dataAnalytics: {
-      title: "Data və biznes analitikası xidmətləri | Metric Analytics",
-      description:
-        "Həllərimizlə biznesinizi 360° əhatə edirik: BI dashboard, data strukturu və mühəndislik, hesabatların yaradılması, AI proqnoz və fraud aşkarlama.",
+      title: "Data və Biznes Analitikası Xidmətləri | Metric Analytics",
+      description: "Həllərimizlə biznesinizi 360° əhatə edirik",
     },
     reporting: {
-      title: "Vahid hesabatlıq sistemi | Metric Analytics",
-      description:
-        "ERP sistemlərinin inteqrasiyası və müasir analitik hesabatlar: vahid hesabatlıq sistemi, BI dashboard və avtomatik bildirişlər.",
+      title: "Vahid Hesabatlıq Sistemi | Metric Analytics",
+      description: "ERP sistemlərinin inteqrasiyası və müasir analitik hesabatlar",
     },
     about: {
       title: "Haqqımızda - Metric Analytics komandası və missiyamız",
@@ -92,14 +90,12 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Business analytics, data solutions, smart alerts, artificial intelligence and fraud detection systems with Metric BI, Alert, AI and Fraud.",
     },
     dataAnalytics: {
-      title: "Data analytics and business analytics services | Metric Analytics",
-      description:
-        "We cover your business 360° with our solutions: BI dashboards, data structure and engineering, report building, AI forecasting and fraud detection.",
+      title: "Data and Business Analytics Services | Metric Analytics",
+      description: "We cover your business 360° with our solutions",
     },
     reporting: {
-      title: "Unified reporting system | Metric Analytics",
-      description:
-        "ERP system integration and modern analytical reports: a unified reporting system, BI dashboards and automated alerts.",
+      title: "Unified Reporting System | Metric Analytics",
+      description: "ERP system integration and modern analytical reports",
     },
     about: {
       title: "About us - the Metric Analytics team and our mission",
@@ -130,13 +126,11 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
     },
     dataAnalytics: {
       title: "Услуги аналитики данных и бизнес-аналитики | Metric Analytics",
-      description:
-        "Нашими решениями мы охватываем ваш бизнес на 360°: BI-дашборды, структура данных и инженерия, построение отчётов, ИИ-прогнозы и выявление мошенничества.",
+      description: "Нашими решениями мы охватываем ваш бизнес на 360°",
     },
     reporting: {
       title: "Единая система отчётности | Metric Analytics",
-      description:
-        "Интеграция ERP-систем и современные аналитические отчёты: единая система отчётности, BI-дашборды и автоматические уведомления.",
+      description: "Интеграция ERP-систем и современные аналитические отчёты",
     },
     about: {
       title: "О нас - команда Metric Analytics и наша миссия",
