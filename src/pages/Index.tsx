@@ -124,11 +124,6 @@ export default function Index() {
               {t("services.whatYouGain")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
             </Link>
           </div>
-          <div className="mt-6 text-center">
-            <Link to="/services/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              {t("services.allServices")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
-            </Link>
-          </div>
         </div>
       </section>
 

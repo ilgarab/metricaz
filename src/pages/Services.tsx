@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { ChevronRight } from "lucide-react";
+import { Link } from "@/i18n/Link";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
 import CTABanner from "@/components/CTABanner";
@@ -31,8 +33,13 @@ export default function Services() {
         <div className="container">
           <div className="grid gap-6 md:grid-cols-2">
             {services.map((s, i) => (
-              <ServiceCard key={s.id} {...s} shortDesc={serviceDescs[s.id] || s.shortDesc} index={i} />
+              <ServiceCard key={s.id} {...s} shortDesc={serviceDescs[s.id] || s.shortDesc} index={i} to="/data-analitikasi/" />
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link to="/hesabat-sistemi/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
+              {t("services.whatYouGain")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
+            </Link>
           </div>
         </div>
       </section>
