@@ -55,14 +55,12 @@ const pageSeo: Record<Lang, Record<PageKey, Meta>> = {
         "Metric BI, Alert, AI və Fraud ilə biznes analitikası, data həlləri, smart bildirişlər, süni intellekt və fraud aşkarlama sistemləri.",
     },
     dataAnalytics: {
-      title: "Data və biznes analitikası xidmətləri | Metric Analytics",
-      description:
-        "Həllərimizlə biznesinizi 360° əhatə edirik: BI dashboard, data strukturu və mühəndislik, hesabatların yaradılması, AI proqnoz və fraud aşkarlama.",
+      title: "Data və Biznes Analitikası Xidmətləri | Metric Analytics",
+      description: "Həllərimizlə biznesinizi 360° əhatə edirik",
     },
     reporting: {
-      title: "Vahid hesabatlıq sistemi | Metric Analytics",
-      description:
-        "ERP sistemlərinin inteqrasiyası və müasir analitik hesabatlar: vahid hesabatlıq sistemi, BI dashboard və avtomatik bildirişlər.",
+      title: "Vahid Hesabatlıq Sistemi | Metric Analytics",
+      description: "ERP sistemlərinin inteqrasiyası və müasir analitik hesabatlar",
     },
     about: {
       title: "Haqqımızda - Metric Analytics komandası və missiyamız",
