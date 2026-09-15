@@ -26,7 +26,7 @@ export default function ServiceCard({ id, icon, title, shortDesc, index = 0 }: S
       <div className="group block h-full">
         <div className="glow-card flex h-full flex-col p-6 md:p-8">
           <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
-            <Icon size={24} />
+            <Icon size={24} aria-hidden="true" focusable="false" />
           </div>
           <h3 className="mb-3 text-lg font-semibold tracking-tight">{title}</h3>
           <p className="mb-5 flex-1 text-sm text-muted-foreground" style={{ lineHeight: "1.7" }}>{shortDesc}</p>
