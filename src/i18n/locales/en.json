@@ -59,21 +59,24 @@
         "excerpt": "The importance of individual customer approach and data-driven marketing.",
         "category": "Marketing",
         "readTime": "8 min",
-        "content": "Remember the famous lines from the Soviet-era film \"The Irony of Fate\": \"Do you really build such similar houses?\" - \"Yes, but different people live in each one.\" This approach can also be applied to modern marketing.\n\nIn the modern era, it is no longer effective to address every customer with the same message. It is necessary to segment customers based on data and apply an individual approach to each one.\n\nBy analyzing customer behavior data, we can determine which products to offer to whom, which campaigns are effective, and which customers are at risk of being lost."
+        "content": "Remember the famous lines from the Soviet-era film \"The Irony of Fate\": \"Do you really build such similar houses?\" - \"Yes, but different people live in each one.\" This approach can also be applied to modern marketing.\n\nIn the modern era, it is no longer effective to address every customer with the same message. It is necessary to segment customers based on data and apply an individual approach to each one.\n\nBy analyzing customer behavior data, we can determine which products to offer to whom, which campaigns are effective, and which customers are at risk of being lost.",
+        "hiddenText": "Analitika şirkətləri"
       },
       "data-esasli-qerar": {
         "title": "Data-driven decision making: Why does it matter?",
         "excerpt": "The importance and application of data-driven decision making in modern business.",
         "category": "Analytics",
         "readTime": "6 min",
-        "content": "Data-driven decision making is one of the main pillars of modern business. Companies make hundreds of decisions every day, and the quality of these decisions directly affects the company's profitability.\n\nResearch shows that companies that implement data-driven decision-making processes show 5-6% higher productivity compared to their competitors."
+        "content": "Data-driven decision making is one of the main pillars of modern business. Companies make hundreds of decisions every day, and the quality of these decisions directly affects the company's profitability.\n\nResearch shows that companies that implement data-driven decision-making processes show 5-6% higher productivity compared to their competitors.",
+        "hiddenText": "Analitika şirkətləri"
       },
       "bi-dashboard": {
         "title": "BI Dashboard: Your business mirror",
         "excerpt": "The role of an effective BI dashboard in business management.",
         "category": "BI",
         "readTime": "5 min",
-        "content": "A BI Dashboard is a powerful tool that allows you to see all the key indicators of your business on one screen. A properly built dashboard allows a manager to assess the company's situation in seconds.\n\nAt Metric Analytics, we develop custom dashboard solutions using Power BI, Tableau and other BI tools."
+        "content": "A BI Dashboard is a powerful tool that allows you to see all the key indicators of your business on one screen. A properly built dashboard allows a manager to assess the company's situation in seconds.\n\nAt Metric Analytics, we develop custom dashboard solutions using Power BI, Tableau and other BI tools.",
+        "hiddenText": "Analitika şirkətləri"
       }
     }
   },

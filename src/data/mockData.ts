@@ -41,6 +41,7 @@ export const blogPosts = [
 Müasir dövrdə artıq hər müştəriyə eyni mesajla müraciət etmək effektiv deyil. Datalar əsasında müştəriləri seqmentlərə ayırıb hər birinə fərdi yanaşma tətbiq etmək lazımdır.
 
 Müştəri davranış datalarını analiz edərək hansı məhsulların kimə təklif olunacağını, hansı kampaniyaların effektiv olduğunu və hansı müştərilərin itirilmə riskində olduğunu müəyyən edə bilərik.`,
+    hiddenText: "Analitika şirkətləri",
   },
   {
     id: "data-esasli-qerar",
@@ -55,6 +56,7 @@ Müştəri davranış datalarını analiz edərək hansı məhsulların kimə t�
     content: `Data əsaslı qərar qəbulu müasir biznesin əsas sütunlarından biridir. Şirkətlər hər gün yüzlərlə qərar verir və bu qərarların keyfiyyəti birbaşa şirkətin gəlirliliyinə təsir edir.
 
 Araşdırmalar göstərir ki, data əsaslı qərar qəbuletmə prosesi tətbiq edən şirkətlər rəqiblərinə nisbətən 5-6% daha yüksək məhsuldarlıq göstərir.`,
+    hiddenText: "Analitika şirkətləri",
   },
   {
     id: "bi-dashboard",
@@ -69,6 +71,7 @@ Araşdırmalar göstərir ki, data əsaslı qərar qəbuletmə prosesi tətbiq e
     content: `BI Dashboard - biznesinizin bütün əsas göstəricilərini bir ekranda görməyə imkan verən güclü alətdir. Düzgün qurulmuş dashboard rəhbərə saniyələr içində şirkətin vəziyyətini qiymətləndirməyə imkan verir.
 
 Metric Analytics olaraq biz Power BI, Tableau və digər BI alətləri ilə fərdi dashboard həlləri hazırlayırıq.`,
+    hiddenText: "Analitika şirkətləri",
   },
 ];
 

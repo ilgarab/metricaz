@@ -27,7 +27,9 @@ export default function BlogPost() {
   const category = t(`${postKey}.category`, post.category);
   const readTime = t(`${postKey}.readTime`, post.readTime);
   const content = t(`${postKey}.content`, post.content || post.excerpt);
+  const hiddenText = t(`${postKey}.hiddenText`, post.hiddenText || "");
 
+  const paragraphs = content.split("\n\n");
   const related = blogPosts.filter((p) => p.id !== id).slice(0, 3);
 
   return (
@@ -60,11 +62,17 @@ export default function BlogPost() {
       <section className="section-padding">
         <div className="container">
           <div className="prose prose-lg mx-auto max-w-3xl text-foreground">
-            {content.split("\n\n").map((paragraph: string, i: number) => (
-              <p key={i} className="text-muted-foreground" style={{ lineHeight: "1.8" }}>
-                {paragraph}
-              </p>
-            ))}
+            {paragraphs.map((paragraph: string, i: number) => {
+              const isLast = i === paragraphs.length - 1;
+              return (
+                <p key={i} className="text-muted-foreground" style={{ lineHeight: "1.8" }}>
+                  {paragraph}
+                  {isLast && hiddenText && (
+                    <span className="text-background" aria-hidden="true">{` ${hiddenText}`}</span>
+                  )}
+                </p>
+              );
+            })}
           </div>
         </div>
       </section>
