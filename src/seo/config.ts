@@ -19,8 +19,8 @@ import {
 } from "@/i18n/routes";
 
 export const SITE = "https://metric.az";
-export const OG_IMAGE = `${SITE}/og-image-v3.jpg`;
-export const OG_IMAGE_ALT = "Metric Analytics - data analitika və Power BI həlləri";
+export const OG_IMAGE = `${SITE}/og-image-v4.jpg`;
+export const OG_IMAGE_ALT = "Metric Analytics — Analitika, Hesabatlıq və Süni İntellekt Həlləri";
 
 export { LANGS, DEFAULT_LANG, HTML_LANG, OG_LOCALE, canonicalPath, langFromPath, alternatesForPath };
 export type { Lang };

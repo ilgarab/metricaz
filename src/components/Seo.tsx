@@ -90,8 +90,10 @@ export default function Seo() {
       setMeta("property", "og:type", "website");
       setMeta("property", "og:locale", OG_LOCALE[lang]);
       setMeta("property", "og:image", OG_IMAGE);
+      setMeta("property", "og:image:secure_url", OG_IMAGE);
+      setMeta("property", "og:image:type", "image/jpeg");
       setMeta("property", "og:image:width", "1200");
-      setMeta("property", "og:image:height", "640");
+      setMeta("property", "og:image:height", "630");
       setMeta("property", "og:image:alt", OG_IMAGE_ALT);
       setMeta("name", "twitter:title", nf.title);
       setMeta("name", "twitter:description", nf.description);
@@ -112,8 +114,10 @@ export default function Seo() {
     setMeta("property", "og:type", seo.ogType);
     setMeta("property", "og:locale", seo.ogLocale);
     setMeta("property", "og:image", seo.ogImage);
+    setMeta("property", "og:image:secure_url", seo.ogImage);
+    setMeta("property", "og:image:type", "image/jpeg");
     setMeta("property", "og:image:width", "1200");
-    setMeta("property", "og:image:height", "640");
+    setMeta("property", "og:image:height", "630");
     setMeta("property", "og:image:alt", seo.ogImageAlt);
     setMeta("name", "twitter:title", seo.title);
     setMeta("name", "twitter:description", seo.description);
