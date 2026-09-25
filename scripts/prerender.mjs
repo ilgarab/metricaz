@@ -50,10 +50,8 @@ function buildHtml({
   replaceMeta("property", "og:type", ogType);
   replaceMeta("property", "og:locale", ogLocale);
   replaceMeta("property", "og:image", OG_IMAGE);
-  replaceMeta("property", "og:image:secure_url", OG_IMAGE);
-  replaceMeta("property", "og:image:type", "image/jpeg");
   replaceMeta("property", "og:image:width", "1200");
-  replaceMeta("property", "og:image:height", "630");
+  replaceMeta("property", "og:image:height", "640");
   replaceMeta("property", "og:image:alt", OG_IMAGE_ALT);
   replaceMeta("name", "twitter:title", title);
   replaceMeta("name", "twitter:description", description);
