@@ -5,11 +5,10 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceCard from "@/components/ServiceCard";
-import BlogCard from "@/components/BlogCard";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import StatCounter from "@/components/StatCounter";
 import CTABanner from "@/components/CTABanner";
-import { services, blogPosts } from "@/data/mockData";
+import { services } from "@/data/mockData";
 import heroBgDark from "@/assets/hero-bg-dark.jpg";
 import heroBgLight from "@/assets/hero-bg-light.jpg";
 import partnersLight from "@/assets/partners-light.png";
@@ -176,27 +175,6 @@ export default function Index() {
             title={t("testimonials.title")}
           />
           <TestimonialSlider />
-        </div>
-      </section>
-
-      {/* Blog */}
-      <section className="section-padding bg-card/30">
-        <div className="container">
-          <SectionHeader
-            badge={t("blog.badge")}
-            title={t("blog.title")}
-            subtitle={t("blog.subtitle")}
-          />
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.slice(0, 3).map((p, i) => (
-              <BlogCard key={p.id} {...p} index={i} />
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link to="/blog/" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-3 transition-all duration-200">
-              {t("blog.allPosts")} <ChevronRight aria-hidden="true" focusable="false" size={14} />
-            </Link>
-          </div>
         </div>
       </section>
 
